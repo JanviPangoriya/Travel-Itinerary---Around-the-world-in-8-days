@@ -11,3 +11,11 @@ video{
 		right: 0;
 
 	}
+.overlay{
+		min-width: 100%;
+		min-height: 100%;
+		position: absolute;
+		top: 0;
+		left:0;
+		background-color: rgba(245, 0, 87,.2);
+	}
