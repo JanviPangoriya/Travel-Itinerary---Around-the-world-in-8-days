@@ -36,3 +36,12 @@ video{
 		font-weight: bold;
 	}
 	
+.text p{
+		font-size: 3em;
+		text-shadow:3px 3px grey;
+		padding-left: 5px;
+		padding-right: 8px;
+		font-family: Lobster,cursive;
+		background-color: #9dc5c3;
+		background-image: linear-gradient(#e96443,#904e95);
+	}
