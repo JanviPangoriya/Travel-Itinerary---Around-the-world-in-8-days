@@ -29,3 +29,10 @@ video{
 		justify-content: center;
 		text-align: center;
 		}
+.text h1{
+		font-size: 6rem;
+		text-shadow:5px 3px grey;
+		
+		font-weight: bold;
+	}
+	
