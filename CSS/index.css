@@ -19,3 +19,13 @@ video{
 		left:0;
 		background-color: rgba(245, 0, 87,.2);
 	}
+.text{
+		min-width: 100%;
+		min-height: 100%;
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		}
