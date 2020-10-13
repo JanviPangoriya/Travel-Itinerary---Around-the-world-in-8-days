@@ -34,4 +34,15 @@ form h2{
 	color:white;
 	font-family: Arial;
 }
+#submit{
+	display: block;width:50px;
+	background-color: red;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 7px;
+	}
+body{
+	overflow: hidden;
+	background-color: black;
+}
 
