@@ -45,4 +45,20 @@ body{
 	overflow: hidden;
 	background-color: black;
 }
+@media(max-width: 1048px){
+	form{
+		margin-left: 45%;
+		min-width: 300px;
+		margin-top: 22%;
+	}
+}
+@media(max-width: 800px){
+	form{
+		margin-left: auto;
+		width:300px;
+		margin-top: 42%;
+		margin-right: auto;
+	}
+}
+
 
