@@ -46,10 +46,11 @@
 .menu li a{
     text-decoration: none;
     color: white;
+    font-weight: bold;
     display: block;
     padding: 10px;
     padding-left: 10px;
-    font-size: 20px;
+    font-size: 25px;
 }
 .menu li a:hover
 {
@@ -82,54 +83,46 @@
 .text h1
 {
     text-transform: uppercase;
+    color: white;
     animation: banner 10s linear alternate infinite;
 }
 @keyframes banner{
     0%
     {
         font-size: 10px;
-        color: #ffcce5;
     }
     10%
     {
         font-size:20px;
-        color: #ff99cc;
     }
     20%
     {
         font-size: 30px;
-        color: #ff66b2;
     }
     30%
     {
         font-size:40px;
-        color: #ff3399;
     }
     40%
     {
         font-size: 50px;
-        color: #ff007f;
     } 
     50%
     {
         font-size:60px;
-        color: #cc0066;
     }
     70%
     {
         font-size: 70px;
-        color: #99004c;
     }
     80%
     {
         font-size: 70px;
-        color: black;
 
     }
      100%
     {
         font-size:80px;
-       color: black;
     }
 }
 .text h2
@@ -138,5 +131,5 @@
     text-transform: capitalize;
     font-variant: small-caps;
     margin-top: 30px;
-    color: brown;
+    color: rgb(32, 14, 14);
 }
