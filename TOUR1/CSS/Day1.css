@@ -123,13 +123,13 @@
     80%
     {
         font-size: 70px;
-        color: lightcoral;
+        color: black;
 
     }
      100%
     {
         font-size:80px;
-       color: red;
+       color: black;
     }
 }
 .text h2
