@@ -7,7 +7,7 @@
 }
 body
 {
-background-color: #000;}
+background-color: black;}
 .header
 {
     width: 100%;
@@ -394,4 +394,171 @@ background-color: #000;}
 .section1-3 a:hover
 {
     transform: skewX(30deg);
+}
+.section2 h2
+{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 60px;
+    color: rgba(136, 128, 128, 0.5);
+    text-align: center;
+    letter-spacing:1.5px;
+    color: cornflowerblue;
+}
+.box
+{
+    margin: 25px;
+    border-radius: 6px;
+    float: left;
+    display: block;
+    background-color: white;
+    color:black;
+    border:5px solid rgb(62, 48, 121);
+    margin-left: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.box img
+{
+    width: 350px;
+    height: 275px;
+
+}
+.box1 img{
+    width: 450px;
+    height: 275px;
+}
+.box1
+{
+    margin: 25px;
+    border-radius: 6px;
+    float: left;
+    display: block;
+    background-color: white;
+    color:black;
+    border:5px solid rgb(62, 48, 121);
+    margin-left: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.box2 img
+{
+    width: 350px;
+    height: 275px;
+
+}
+.box2
+{
+    margin: 25px;
+    border-radius: 6px;
+    float: left;
+    display: block;
+    background-color: white;
+    color:black;
+    border:5px solid rgb(62, 48, 121);
+    margin-left: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.box3 img
+{
+    width: 450px;
+    height: 275px;
+
+}
+.box3
+{
+    margin: 25px;
+    border-radius: 6px;
+    float: left;
+    display: block;
+    background-color: white;
+    color:black;
+    border:5px solid rgb(62, 48, 121);
+    margin-left: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.box4 img
+{
+    width: 250px;
+    height: 275px;
+
+}
+.box4
+{
+    margin: 25px;
+    border-radius: 6px;
+    float: left;
+    display: block;
+    background-color: white;
+    color:black;
+    border:5px solid rgb(62, 48, 121);
+    margin-left: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.box5 img
+{
+    width: 450px;
+    height: 275px;
+
+}
+.box5
+{
+    margin: 25px;
+    border-radius: 6px;
+    position: relative;
+    float: left;
+    display: block;
+    background-color: white;
+    color:black;
+    border:5px solid rgb(62, 48, 121);
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.box6 img
+{
+    width: 650px;
+    height: 275px;
+
+}
+.box6
+{
+    border-radius: 6px;
+    position: relative;
+    float: left;
+    display: block;
+    background-color: white;
+    color:black;
+    border:5px solid rgb(62, 48, 121);
+    margin-left: 300px;
+    margin-bottom: 100px;
+}
+.box3,.box4,.box5,.box6
+{
+    margin-top: 10px;
+}
+.box6 div,.box div,.box1 div,.box2 div,.box3 div,.box4 div,.box5 div{
+    width: 100%;
+    height: 100%;
+    font-size: 29px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #000;
+    color: white;
+    margin-bottom: 5px;
+    opacity: 0;
+    text-transform: uppercase;
+    visibility: hidden;
+    transition: 4s;
+    display: flex; 
+    justify-content:center ; 
+    align-items: center;
+}
+.box6:hover div,.box:hover div,.box1:hover div,.box2:hover div,.box3:hover div,.box4:hover div,.box5:hover div
+{
+    visibility: visible;
+    opacity: 0.7;
 }
