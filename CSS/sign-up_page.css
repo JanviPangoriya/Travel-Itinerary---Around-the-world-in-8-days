@@ -16,7 +16,7 @@ box-sizing: border-box;
 			background-color:black;
 			opacity: .8;
 			width: 350px;
-			height:30%;
+			min-height:30%;
 			display: block;
 			margin-left: 50%;
 			margin-right: 40%;
