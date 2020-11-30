@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day 1-Welcome to Amsterdam</title>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="C:\Users\HP\Desktop\day1.css">
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+		<!--<header>
+			<div id="nav-bar">
+				<h2 style="">TRAVEL ITINERARY</h2>
+				<ol style="">
+					<li><a href=""> Home </a></li>
+					<li><a href=""> Escape From > </a></li>
+					<li><a href=""> Stay </a></li>
+					<li><a href=""> Journal </a></li>
+					<li><a href=""> Book Now </a></li>
+
+				</ol>
+			</div>
+		</header>-->
+		<header>
+        <div class="container">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: black; height:92px;">
+                <a class="navbar-brand" href="#" style="color: white;">Travel Itinerary</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: grey;margin-right: 10px;color: black;">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Home </a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Escape To</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Stay</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Book Now</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                      </li>
+                      
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    </header>
+		
+
+		<div id="banner">
+			<img src="C:\Users\HP\Desktop\amsterdam_banner.JPG" id="banner_img" onload="typeWriter()">
+			<h2 id="banner_text" style="" ></h2>
+			<script type="text/javascript">
+				var i = 0;
+				var txt = 'Amsterdam';
+				var speed = 350;
+
+				function typeWriter() {
+  					if (i < txt.length) {
+   					 	document.getElementById("banner_text").innerHTML += txt.charAt(i);
+    					i++;
+    					setTimeout(typeWriter, speed);
+  					}
+				}
+			</script>
+		</div >
+
+		<div id="places_to_visit" style="background-color: #0b032d;">
+			<h2 id="places_to_visit_text">Exclusive Excursion of the City</h2>
+			<!--
+			<div id="overlay">
+			     <img src="C:\Users\HP\Desktop\amsterdam_places_to_visit.jpg" id="img1" onmouseover="document.getElementById('text').innerHTML='Golden Age Canals';" onmouseout="document.getElementById('text').innerHTML='';">
+			     <p id="text"></p>
+		    </div>
+		    <div id="overlay">
+			     <img src="C:\Users\HP\Desktop\magere_burg_amsterdam.jpg" id="img2" onmouseover="document.getElementById('text2').innerHTML='Magere burg';" onmouseout="document.getElementById('text2').innerHTML='';">
+			     <p id="text2"></p>
+		    </div>
+		    <div id="overlay">
+			     <img src="C:\Users\HP\Desktop\i_amsterdam.jpg" id="img3" onmouseover="document.getElementById('text3').innerHTML=' Rijksmuseum';" onmouseout="document.getElementById('text3').innerHTML='';">
+			     <p id="text3"></p>
+		    </div>
+		    <div id="overlay">
+			     <img src="C:\Users\HP\Desktop\windmill_amsterdam.jpg" id="img4" onmouseover="document.getElementById('text4').innerHTML='Zaanse Schans Windmill';" onmouseout="document.getElementById('text4').innerHTML='';">
+			     <p id="text4"></p>
+		    </div>
+		    <div id="overlay">
+			     <img src="C:\Users\HP\Desktop\damsqaure_amsterdam.jpg" id="img5" onmouseover="document.getElementById('text5').innerHTML='Dam Square';" onmouseout="document.getElementById('text5').innerHTML='';">
+			     <p id="text5"></p>
+		    </div>
+		    <div id="overlay">
+			     <img src="C:\Users\HP\Desktop\botanicalGarden.jpg" id="img6" onmouseover="document.getElementById('text6').innerHTML='Botanical Garden';" onmouseout="document.getElementById('text6').innerHTML='';">
+			     <p id="text6"></p>
+		    </div>
+		    <div id="overlay">
+			     <img src="C:\Users\HP\Desktop\old_church_amsterdan.JPG" id="img7" onmouseover="document.getElementById('text7').innerHTML='Oude Kerk (Old Church)';" onmouseout="document.getElementById('text7').innerHTML='';">
+			     <p id="text7"></p>
+		    </div>
+		    <div id="overlay">
+			     <img src="C:\Users\HP\Desktop\jordan_amsterdam.JPG" id="img8" onmouseover="document.getElementById('text8').innerHTML='Jordan';" onmouseout="document.getElementById('text8').innerHTML='';">
+			     <p id="text8"></p>
+		    </div>
+		    <div id="overlay">
+			     <img src="C:\Users\HP\Desktop\rembrandplein_amsterdam.JPG" id="img9" onmouseover="document.getElementById('text9').innerHTML='Rembrandplein Square';" onmouseout="document.getElementById('text9').innerHTML='';">
+			     <p id="text9"></p>
+		    </div>
+		    <div id="overlay">
+			     <img src="C:\Users\HP\Desktop\nemo_science_amsterdam.JPG" id="img10" onmouseover="document.getElementById('text10').innerHTML='NEMO Science Meuseum';" onmouseout="document.getElementById('text10').innerHTML='';">
+			     <p id="text10"></p>
+		    </div>-->
+		    <div class="image-gallery">
+          		<a href="C:\Users\HP\Desktop\damsqaure_amsterdam.jpg" class="img1"> 
+            		<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+            	</a>
+
+            	<a href="C:\Users\HP\Desktop\magere_burg_amsterdam.jpg" class="img2">
+              		<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+              	</a>
+              	<a href="C:\Users\HP\Desktop\rembrandplein_amsterdam.JPG" class="img3">
+                	<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+                <a href="C:\Users\HP\Desktop\rembrandplein_amsterdam.JPG" class="img4">
+                  	<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+                <a href="C:\Users\HP\Desktop\windmill_amsterdam.jpg" class="img5">
+                    <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+                <a href="C:\Users\HP\Desktop\old_church_amsterdan.JPG" class="img6">
+                      <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+                <a href="C:\Users\HP\Desktop\i_amsterdam.jpg" class="img7">
+                        <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+                <a href="C:\Users\HP\Desktop\jordan2.jpg" class="img8">
+                          <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+        </div>
+
+		</div>
+
+		<div id="events">
+			<h1 id="event_header">Events And Festivals</h1>
+			<p id="event_text_intro">Almost every week a cultural event or festival is held in Amsterdam. Many of these Amsterdam events and festivals have a long tradition and are carefully conserved by the Dutch. But these typical Dutch festivities are also very nice for tourists, because a lot of them are held with an English-speaking public in mind.</p>
+			<div class="left">
+			<h3>Spring Amsterdam Events</h3>
+			<p>Spring is a vibrant season in Amsterdam.The most important event each spring is Koningsdag (Kingsday). On the 27th of April the entire country is celebrating the King's Birthday. Many young people from all over the The Netherlands travel to Amsterdam, where the festivities last for two days. </p>
+			<p>On the 5th May the Dutch celebrate Bevrijdingsdag (Liberation day), which marks the end of WWII in The Netherlands. Large festivities are held in parks and on squares in the city.</p>
+		    </br></br>
+			</div>
+			<img src="C:\Users\HP\Desktop\kings_day_amsterdam.jpg" style="float: right;height: 200px;width: 45%;">
+
+			<div class="right">
+				</br></br></br>
+			<h3>Summer Amsterdam Events</h3>
+			<p>Summer is the time of open air festivals, theatre and concerts. Probably the most attractive event in summer is the Grachtenfestival, which is held mid-August. It is a series of concerts and shows, culminating with a big concert at the Prinsengracht. Visitors also listen from the canal banks and bridges nearby, because the water echoes the music.</p></br></br></br></br>
+			</div>
+			<img src="C:\Users\HP\Desktop\gratchen_festival_amsterdam.jpg" style="float:left;height: 300px;width: 45%;">
+
+			<div class="left">
+				</br></br>
+			<h3>Autumn Amsterdam Events</h3>
+			<p>In the autumn Amsterdam is vibrating with cultural events: books and antique markets, concerts, film festivals and events in museums. Probably the most important of the autumn is IDFA, an International Documentary Film Festival starting in the middle of November, showing documentaries in cinemas all over town. Go see a documentary in the beautiful Tuschinski or in the modern Eye Film Institute in Amsterdam-Noord.Museum Night is another attractive Amsterdam event that takes place in November. </p>
+			</br></br>
+			</div>
+			<img src="C:\Users\HP\Desktop\autumn_amsterdam.jpg" style="float:left;height: 300px;width: 23%;">
+			<img src="C:\Users\HP\Desktop\autumn2.jpg" style="float:right;height: 300px;width: 25%;">
+
+			<div class="right">
+				</br></br>
+			<h3 style="padding-left: 25px;">Winter Amsterdam Events</h3>
+			<p style="padding: 25px;">Winter is often not very cold in Amsterdam, due to the mild sea climate. The days with freezing temperatures are scarce, but when it happens and the canals freeze, the view of people all ages skating on ice is beautiful.n the evening you should definitely go see the Amsterdam Light Festival event.December hosts three important holidays: New Year's Eve, Christmas and Sinterklaas, the Dutch version of Santa Claus.Winter is the most quiet of the seasons except for the New Year Eve Amsterdam events and celebrations at the Dam square.</p>
+			</div>
+			<img src="C:\Users\HP\Desktop\winter1_amsterdam.jpg" style="float:left;height: 300px;width: 22%;">
+			<img src="C:\Users\HP\Desktop\winter2_amsterdam.jpg" style="float:right;height: 300px;width: 26%;">
+		</div>
+
+		<div id="lifestyle">
+			<h1 id="lifestyle_header">Lifestyle and Fun</h1>
+			<div class="box">
+				<img src="C:\Users\HP\Desktop\nightlife_amsterdam.jpg">
+				<h4>NightLife Ticket</h4>
+				<p>It is definitely worth to consider this nightlife ticket. It will most likely save you time and money. For 7 days you get free entrance to Amsterdam clubs, free shots, beers & cocktails, lazertag & bowling, free UBER and much more.</p>
+				<a href="https://amsterdamnightlifeticket.com/">Know More</a>
+			</div>
+
+			<div class="box">
+				<img src="C:\Users\HP\Desktop\amsterdam_clubs.jpg">
+				<h4>Amsterdam Clubs</h4>
+				<p>When it comes to nightlife in Amsterdam, there are venues, dance festivals and club nights to suit every taste! DJs keep the crowd going with everything from techno, dub step and trance to hip-hop, funk and deep house.There are worth.</p>
+				<a href="https://www.iamsterdam.com/en/see-and-do/whats-on/clubbing-nightlife-amsterdam">Know More</a>
+			</div>
+
+			<div class="box">
+				<img src="C:\Users\HP\Desktop\life_around_squares.JPG">
+				<h4>Life around Squares</h4>
+				<p>Amsterdam's nightlife centres around Leidseplein.Venues such as Melkweg can be found.Irish pubs,cafés,nightclubs line the square and the streets. For a classy night out,the city theatre, tram stop on the square itself.</p>
+				<a href="https://www.iamsterdam.com/en/see-and-do/whats-on/clubbing-nightlife-amsterdam">Know More</a>
+			</div>
+		</div>
+
+
+		<div id="footer">
+			<h2 id="contact_text">Contact Us</h2>
+			<div id="about">
+				<h3>About Us</h3>
+				<p>
+					Crave for wanderlust? Welcome to Travel Iternary! We travel not to escape life but for life not to escape us. If you are young enough to learn to be better, we urge you to travel as far and as widely as possible. Step out of floors. Find out the way how other people live and enjoy life. Look at the unnamed wonders of the world. Live, travel, adventure, bless and don't be sorry. The world is a book and people who don't travel read only a single page. So wake up, make memories, find you way!Each of us have wings. All you have to do is FLY!
+				</p>
+			</div>
+			<div id="services">
+				<h3>Services</h3>
+				<ul>
+					<li><a>Attractions</a></li>
+					<li><a>Food</a></li>
+					<li><a>Accomodation</a></li>
+					<li><a>Book a Tour</a></li>
+					<li><a>Events</a></li>
+					<li><a>Life Style</a></li>
+				</ul>
+			</div>
+
+			<div id="links">
+				<h3>Quick Links</h3>
+				<ul>
+					<li><a>About Us</a></li>
+					<li><a>Contribute</a></li>
+					<li><a>Privacy Policy</a></li>
+					<li><a>Site Maps</a></li>
+					<li><a>Disclaimer</a></li>
+					
+				</ul>
+			</div>
+
+			<div id="contact">
+				<h3>Contact</h3>
+                <ul>
+                    <li><i class="fa fa-home"></i><span>Mathura,Uttar Pradesh</span></li>
+                    <li><i class="fa fa-envelope"></i><span> travel.itinerary.@gmail.com</span></li>
+                    <li><i class="fa fa-phone-square"></i><span>+91 7896541230</span></li>
+                    <li><i class="fa fa-facebook-official"></i><span>GLA University</span></li>
+                </ul>
+            </div>
+</body>
+</html>
