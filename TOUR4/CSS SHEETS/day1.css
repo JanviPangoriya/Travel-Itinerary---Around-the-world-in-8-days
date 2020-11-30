@@ -465,46 +465,46 @@
 .img1
 {
     grid-area: img1;
-    background-image: url("C:\Users\HP\Desktop\damsqaure_amsterdam.jpg");
+    background-image: url("../IMAGES/Amsterdam/damsqaure_amsterdam.jpg");
     min-height: 51.5rem;
 
 }
 .img2
 {
     grid-area: img2;
-    background-image: url("C:\Users\HP\Desktop\magere_burg_amsterdam.jpg");
+    background-image: url("../IMAGES/Amsterdam/magere_burg_amsterdam.jpg");
 }
 .img3
 {
     grid-area: img3;
-    background-image: url("C:\Users\HP\Desktop\rembrandplein_amsterdam.JPG");
+    background-image: url("../IMAGES/Amsterdam/rembrandplein_amsterdam.JPG");
 }
 .img4
 {
     grid-area: img4;
-    background-image: url("C:\Users\HP\Desktop\rembrandplein_amsterdam.JPG");
+    background-image: url("../IMAGES/Amsterdam/rembrandplein_amsterdam.JPG");
 }
 .img5
 {
     grid-area: img5;
-    background-image: url("C:\Users\HP\Desktop\windmill_amsterdam.jpg");
+    background-image: url("../IMAGES/Amsterdam/windmill_amsterdam.jpg");
 }
 .img6
 {
     grid-area: img6;
     min-height: 51.5rem;
-    background-image: url("C:\Users\HP\Desktop\old_church_amsterdan.JPG");
+    background-image: url("../IMAGES/Amsterdam/old_church_amsterdan.JPG");
 
 }
 .img7
 {
     grid-area: img7;
-    background-image: url("C:\Users\HP\Desktop\i_amsterdam.jpg");
+    background-image: url("../IMAGES/Amsterdam/i_amsterdam.jpg");
 }
 .img8
 {
     grid-area: img8;
-    background-image: url("C:\Users\HP\Desktop\jordan2.jpg");
+    background-image: url("../IMAGES/Amsterdam/jordan2.jpg");
 }
 @media (max-width:900px)
 {
