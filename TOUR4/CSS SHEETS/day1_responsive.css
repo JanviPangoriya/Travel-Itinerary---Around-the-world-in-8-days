@@ -478,12 +478,12 @@
 .img3
 {
     grid-area: img3;
-    background-image: url("../IMAGES/Amsterdam/rembrandplein_amsterdam.jpg");
+    background-image: url("../IMAGES/Amsterdam/rembrandplein_amsterdam.JPG");
 }
 .img4
 {
     grid-area: img4;
-    background-image: url("../IMAGES/Amsterdam/rembrandplein_amsterdam.jpg");
+    background-image: url("../IMAGES/Amsterdam/rembrandplein_amsterdam.JPG");
 }
 .img5
 {
@@ -494,13 +494,13 @@
 {
     grid-area: img6;
     min-height: 51.5rem;
-    background-image: url("../IMAGES/Amsterdam/old_church_amsterdan.jpg");
+    background-image: url("../IMAGES/Amsterdam/old_church_amsterdan.JPG");
 
 }
 .img7
 {
     grid-area: img7;
-    background-image: url("../IMAGES/Amsterdam/i_amsterdam.JPG");
+    background-image: url("../IMAGES/Amsterdam/I_amsterdam.JPG");
 }
 .img8
 {
@@ -1031,6 +1031,6 @@
 		}
 		@media(max-width: 600px){
 			#places_to_visit{
-				height:5000px;
+				height:4500px;
 			}
 		}
