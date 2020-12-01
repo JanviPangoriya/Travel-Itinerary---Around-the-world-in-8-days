@@ -6,30 +6,1054 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="../CSS SHEETS/day1.css">
+    
 	<style type="text/css">
+		*{
+			margin:0;
+			padding:0 ;
+			box-sizing: border-box;
+		}
+		body{
+			background-color: black;
+		}
+		/*#nav-bar{
+			width: 100%;
+			height:75px;
+			z-index: 99;
+			position: fixed;
+			top:0;
+			left:0;
+			background-color: black;
+
+		}
+		#nav-bar h2{
+			line-height: 75px;
+			color: white;
+			font-family:'Kaushan Script', cursive; 
+			float: left;
+			margin-left: 20px;
+		}
+		#nav-bar ol{
+			list-style: none;
+			 float: right;
+		}*/
+		header
+{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+.navbar
+{
+    padding: 20px 0;
+}
+.navbar-brand
+{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    margin-left: 10px;
+}
+.nav-item
+{
+    font-weight: 800;
+    
+    padding: 5px;
+}
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item.active .nav-link
+{
+    
+    color:yellow;
+}
+.navbar-light .navbar-toggler
+{
+    border: none;
+    color: white;
+    border: 2px solid #7f7f7f;
+    border-radius: 0;
+    outline: none;
+}
+.navbar-collapse
+{
+    background-color: black;
+}
+.navbar-light .navbar-nav .nav-item .nav-link
+{
+    color: white;
+    padding: 5px;
+}
+		#banner{
+			width:100%;
+			height:780px;
+			overflow: hidden;
+		}
+		#banner_img{
+			width: 100%;
+			height:100vh;
+			position: absolute;
+		}
+		#banner_text{
+			color: black;
+			font-size: 4rem;
+			background-color: grey;
+			width: 350px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 450px;
+			margin-left: 35%;
+			opacity: .9;
+			z-index: 0;
+			font-family: 'Kaushan Script', cursive; 
+			position: relative;
+
+		}
+		#places_to_visit{
+			width: 100%;
+			height:1500px;
+		}
+		#places_to_visit_text{
+			display: flex;
+			text-align: center;
+			justify-content: center;
+			color: white;
+			font-size: 3rem;
+			padding: 20px;
+			font-family: 'Kaushan Script', cursive; 
+		}
+		/*#img1{
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			border-radius: 7px;
+			width:95%;
+			height: 300px;
+			opacity: 1;
+			position: absolute;
+			left:40px;
+		}
+       #img1:hover{
+       		opacity: .7;
+       		transition: 2s;
+       }
+       #img2{
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			border-radius: 7px;
+			width:25%;
+			height: 300px;
+			opacity: 1;
+			position: absolute;
+			left:40px;
+			top:1110px;
+		}
+       #img2:hover{
+       		opacity: .7;
+       		transition: 2s;
+       }
+        #img3{
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			border-radius: 7px;
+			width:44%;
+			height: 400px;
+			opacity: 1;
+			position: absolute;
+			left:430px;
+			top:1110px;
+		}
+       #img3:hover{
+       		opacity: .7;
+       		transition: 2s;
+       }
+        #img4{
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			border-radius: 7px;
+			width:25%;
+			height: 400px;
+			opacity: 1;
+			position: absolute;
+			left:1110px;
+			top:1110px;
+		}
+       #img4:hover{
+       		opacity: .7;
+       		transition: 2s;
+       }
+       #img5{
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			border-radius: 7px;
+			width:25%;
+			height: 500px;
+			opacity: 1;
+			position: absolute;
+			left:40px;
+			top:1420px;
+		}
+      #img5:hover{
+       		opacity: .7;
+       		transition: 2s;
+       }
+      #img6{
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			border-radius: 7px;
+			width:45%;
+			height: 400px;
+			opacity: 1;
+			position: absolute;
+			left:432px;
+			top:1520px;
+		}
+      #img6:hover{
+       		opacity: .7;
+       		transition: 2s;
+       }
+      #img7{
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			border-radius: 7px;
+			width:23%;
+			height: 500px;
+			opacity: 1;
+			position: absolute;
+			left:1132px;
+			top:1520px;
+		}
+     #img7:hover{
+       		opacity: .7;
+       		transition: 2s;
+       }
+       #img8{
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			border-radius: 7px;
+			width:35%;
+			height: 400px;
+			opacity: 1;
+			position: absolute;
+			left:40px;
+			top:1927px;
+		}
+     #img8:hover{
+       		opacity: .7;
+       		transition: 2s;
+       }
+       #img9{
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			border-radius: 7px;
+			width:36%;
+			height: 400px;
+			opacity: 1;
+			position: absolute;
+			left:578px;
+			top:1927px;
+		}
+     #img9:hover{
+       		opacity: .7;
+       		transition: 2s;
+       }
+      #img10{
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			border-radius: 7px;
+			width:23%;
+			height: 300px;
+			opacity: 1;
+			position: absolute;
+			left:1135px;
+			top:2025px;
+		}
+     #img10:hover{
+       		opacity: .7;
+       		transition: 2s;
+       }
+       #text{
+       	position: relative;
+       	color: black;
+       	top:170px;
+       	left:45%;
+       	font-size: 2rem;
+       	font-family: 'Kaushan Script', cursive; 
+       	background-color: grey;
+       	width: 300px;
+       	text-align: center;
+       	font-weight: bold;
+       	border-radius: 5px;
+       }
+       #text2{
+       	position: relative;
+       	color: black;
+       	top:500px;
+       	left:9%;
+       	font-size: 2rem;
+       	font-family: 'Kaushan Script', cursive; 
+       	background-color: grey;
+       	width: 200px;
+       	text-align: center;
+       	font-weight: bold;
+       	border-radius: 5px;
+       	opacity:.9;
+       }
+       #text3{
+       	position: relative;
+       	color: black;
+       	top:500px;
+       	left:50%;
+       	font-size: 2rem;
+       	font-family: 'Kaushan Script', cursive; 
+       	background-color: grey;
+       	width: 200px;
+       	text-align: center;
+       	font-weight: bold;
+       	border-radius: 5px;
+       	opacity:.9;
+       }
+       #text4{
+       	position: relative;
+       	color: black;
+       	top:500px;
+       	left:77%;
+       	font-size: 2rem;
+       	font-family: 'Kaushan Script', cursive; 
+       	background-color: grey;
+       	width: 200px;
+       	text-align: center;
+       	font-weight: bold;
+       	border-radius: 5px;
+       	opacity:.9;
+       }
+       #text5{
+       	position: relative;
+       	color: black;
+       	top:900px;
+       	left:5%;
+       	font-size: 2rem;
+       	font-family: 'Kaushan Script', cursive; 
+       	background-color: grey;
+       	width: 200px;
+       	text-align: center;
+       	font-weight: bold;
+       	border-radius: 5px;
+       	opacity:.9;
+       }
+       #text6{
+       	position: relative;
+       	color: black;
+       	top:1000px;
+       	left:45%;
+       	font-size: 2rem;
+       	font-family: 'Kaushan Script', cursive; 
+       	background-color: grey;
+       	width: 170px;
+       	text-align: center;
+       	font-weight: bold;
+       	border-radius: 5px;
+       	opacity:.9;
+       }
+       #text7{
+       	position: relative;
+       	color: black;
+       	top:1000px;
+       	left:80%;
+       	font-size: 2rem;
+       	font-family: 'Kaushan Script', cursive; 
+       	background-color: grey;
+       	width: 180px;
+       	text-align: center;
+       	font-weight: bold;
+       	border-radius: 5px;
+       	opacity:.9;
+       }
+       #text8{
+       	position: relative;
+       	color: black;
+       	top:1200px;
+       	left:7%;
+       	font-size: 2rem;
+       	font-family: 'Kaushan Script', cursive; 
+       	background-color: grey;
+       	width: 200px;
+       	text-align: center;
+       	font-weight: bold;
+       	border-radius: 5px;
+       	opacity:.9;
+       }
+        #text9{
+       	position: relative;
+       	color: black;
+       	top:1200px;
+       	left:47%;
+       	font-size: 2rem;
+       	font-family: 'Kaushan Script', cursive; 
+       	background-color: grey;
+       	width: 200px;
+       	text-align: center;
+       	font-weight: bold;
+       	border-radius: 5px;
+       	opacity:.9;
+       }
+        #text10{
+       	position: relative;
+       	color: black;
+       	top:1240px;
+       	left:80%;
+       	font-size: 2rem;
+       	font-family: 'Kaushan Script', cursive; 
+       	background-color: grey;
+       	width: 200px;
+       	text-align: center;
+       	font-weight: bold;
+       	border-radius: 5px;
+       	opacity:.9;
+       }
+       */
+       .image-gallery
+{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5rem;
+    grid-template-areas: 
+            'img1 img2 img3 img3'
+            'img1 img4 img5 img6'
+            'img7 img7 img8 img6';
+}
+.image-gallery a{
+    width: 100%;
+    height: 25rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-gallery a i{
+    color: rgba(255, 255, 255,.6);
+    font-size: 3rem;
+    position: relative;
+    z-index: 100;
+    padding: 1rem 3rem;
+    border: 2px solid rgba(255, 255, 255,.6);
+    border-radius: 0.4rem;
+    opacity: 0;
+    transition:opacity 0.5s;
+}
+.image-gallery a::before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 100%;
+    transition: opacity 0.5s;
+    background-color: rgba(0,0,0,0.8);
+}
+.image-gallery a:hover i,
+.image-gallery a:hover::before
+{
+    opacity: 1;
+}
+.img1
+{
+    grid-area: img1;
+    background-image: url("../IMAGES/Amsterdam/damsqaure_amsterdam.JPG");
+    min-height: 51.5rem;
+
+}
+.img2
+{
+    grid-area: img2;
+    background-image: url("../IMAGES/Amsterdam/magere_burg_amsterdam.JPG");
+}
+.img3
+{
+    grid-area: img3;
+    background-image: url("../IMAGES/Amsterdam/rembrandplein_amsterdam.jpg");
+}
+.img4
+{
+    grid-area: img4;
+    background-image: url("../IMAGES/Amsterdam/rembrandplein_amsterdam.jpg");
+}
+.img5
+{
+    grid-area: img5;
+    background-image: url("../IMAGES/Amsterdam/windmill_amsterdam.JPG");
+}
+.img6
+{
+    grid-area: img6;
+    min-height: 51.5rem;
+    background-image: url("../IMAGES/Amsterdam/old_church_amsterdan.jpg");
+
+}
+.img7
+{
+    grid-area: img7;
+    background-image: url("../IMAGES/Amsterdam/i_amsterdam.JPG");
+}
+.img8
+{
+    grid-area: img8;
+    background-image: url("../IMAGES/Amsterdam/jordan2.JPG");
+}
+@media (max-width:900px)
+{
+    .image-gallery
+    {
+        grid-template-areas: 
+        'img1 img1 img2 img2'
+        'img1 img1 img3 img3'
+        'img4 img4 img5 img5'
+
+        'img6 img7 img7 img7'
+        'img8 img8 img8 img8';    
+    }
+    .image-gallery a
+    {
+        height: 20rem;
+    }
+    .img1{
+        min-height: 41.5rem;
+    }
+    .img6{
+       min-height: 20rem;
+    }
+    }
+    @media (max-width:600px)
+{
+   .image-gallery
+   {
+       grid-template-areas: 
+       'img1 img1 img1 img1'
+       'img2 img2 img2 img2'
+       'img3 img3 img3 img3'
+       'img4 img4 img4 img4'
+       'img5 img5 img5 img5'
+       'img6 img6 img6 img6'
+       'img7 img7 img7 img7'
+       'img8 img8 img8 img8';    
+   }
+   .image-gallery a,.img1,.img6
+   {
+       height: 20rem;
+       min-height: 20rem;
+   }
+}
+       li{
+       	float: left;
+       	margin-left: 40px;
+       	margin-right: 30px;
+       }
+       a{
+       	line-height: 75px;
+       	color: white;
+       	font-family: 'Kaushan Script', cursive; 
+       	font-size: 25px;
+       }
+       a:hover{
+       	text-decoration: none;
+       	color:yellow;
+       }
+       #events{
+       	width: 100%;
+       	height:1600px;
+       	padding: 40px;
+       	clear: both;
+       }
+       #event_header{
+       	display: block;
+       	margin-left: auto;
+       	margin-right: auto;
+       	font-family: 'Kaushan Script',cursive;
+       	background-color: black;
+       	text-align: center;
+       	color: white;
+       	width: 400px;
+       	padding: 30px;
+       }
+       #event_text_intro{
+       	color: #9FA4C4;
+       	text-align: justify;
+       }
+       #events p{
+       	color:#B3E5FF;
+       }
+       #events h3{
+       	color: darkgrey;
+       	font-family: 'Kaushan Script',cursive;
+       	text-decoration: underline;
+       }
+       #events .left{
+       	float: left;
+       	width:50%;
+       	clear: right;
+       }
+       #events .right{
+       	float: right;
+       	width:50%;
+       	clear: left;
+       }
+       #lifestyle{
+       	width:100%;
+       	height:700px;
+       	background-color: #0b032d;
+       }
+       #lifestyle_header{
+			display: flex;
+			text-align: center;
+			justify-content: center;
+			color: white;
+			font-size: 3rem;
+			padding: 20px;
+			font-family: 'Kaushan Script', cursive; 
 		
+       }
+
+       .box{
+				width:25%;
+				height:530px;
+				background-color: black;
+				float: left;
+				margin-left: 50px;
+				margin-right: 40px;
+				display: block;
+				border-radius: 8px;
+				padding:20px;
+		}
+		.box h4{
+				text-align: center;
+				font-size: 20px;
+				color: white;
+				font-family: 'Kaushan Script',cursive;
+		}
+		.box img{
+			width:100%;
+			height:50%;
+			margin-left: auto;
+			margin right:auto;
+			border-radius: 5px;
+		}
+		.box p{
+			text-align: justify;
+			color: white
+		}
+		.box a{
+			background-color: red;
+			text-decoration: none;
+			color:white;
+			display: block;
+			text-align: center;
+			height: 55px;
+			line-height: 55px;
+		}
+		.box a:hover{
+			background-color: blue;
+		}
+		
+		#footer{
+			padding: 25px;
+		}
+		#contact_text{
+			text-align: center;
+			font-family: 'Kaushan Script',cursive;
+			color:white;
+			margin:30px;
+			font-size: 2rem;
+		}
+		#about{
+			width:40%;
+			justify-content: justify-content;
+			color: white;
+			float: left;
+		}
+		#about h3{
+			font-family: 'Kaushan Script';
+			color: white;
+		}
+		#services{
+			float: left;
+			width:20%;
+			color: white;
+			text-align: center;
+		}
+		#services h3{
+			font-family: 'Kaushan Script',cursive;
+
+		}
+		#links{
+			float: left;
+			width: 20%;
+			color: white;
+			text-align: center;
+		}
+		#links h3{
+			font-family: 'Kaushan Script',cursive;
+		}
+		#contact{
+			float:left;
+			width: 20%;
+			color: white;
+			text-align: center;
+		}
+		#contact h3{
+			font-family: 'Kaushan Script',cursive;
+		}
+		#footer ul{
+			list-style: none;
+		}
+		#footer ul li a{
+			font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+			text-decoration: none;
+		}
+		#services ul li{
+			height:25px;
+			font-size: 10px;
+		}
+		#links ul li{
+			height:25px;
+			font-size: 10px;
+		}
+		#events .spring{
+			float: right;height: 200px;width: 45%;
+		}
+		#events .summer{
+			float:left;height: 300px;width: 45%;
+		}
+		#events .autumn1{
+			float:left;height: 300px;width: 23%;
+		}
+		#events .autumn2{
+			float:right;height: 300px;width: 25%;
+		}
+		#events .winter1{
+			float:left;height: 300px;width: 22%;
+		}
+		#events .winter2{
+			float:right;height: 300px;width: 26%;
+		}
+		@media(min-width:900px) and (max-width: 1100px){
+			#events{
+				height:1810px;
+			}
+			#lifestyle{
+				padding:10px;
+				height:850px;
+			}
+			#lifestyle #third{
+				margin-left: 25px;
+				margin-right: 25px;
+				height: 560px;
+			}
+			#lifestyle #second{
+				margin-left: 25px;
+				margin-right: 25px;
+				height: 560px;
+			}
+			#lifestyle #first{
+				margin-left: 25px;
+				margin-right: 25px;
+				height: 560px;
+			}
+		}
+		@media(max-width:899px) and (min-width: 734px){
+			#events{
+				height:2600px;
+			}
+			#events .left{
+				float: none;
+				clear:none;
+				width: 100%;
+			}
+			#events .right{
+				float: none;
+				clear:none;
+				width: 100%;
+			}
+			#events .spring{
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				float: none;
+			}
+			#events .summer{
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				float: none;
+			}
+			#events .autumn1{
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				width:45%;
+			}
+			#events .autumn2{
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				float: none;
+				width:45%;
+			}
+			#events .winter1{
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				width:45%;
+			}
+			#events .winter2{
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				float: none;
+				width:45%;
+			}
+			#lifestyle{
+				padding:10px;
+			}
+			#lifestyle #third{
+				margin-top: 20px;
+				width:280px;
+				height: 600px;
+				margin-left: 30%;
+				
+				display: block;
+			}
+			#lifestyle #second{
+				width:250px;
+				height: 620px;
+				margin-right: 7%;
+			}
+			#lifestyle #first{
+				width:250px;
+				height: 620px;
+				margin-left: 7%;
+			}
+			#lifestyle{
+				height:1500px;
+			}
+			#about{
+				width:40%;
+			}
+			#services{
+				width:25%;
+			}
+			#links{
+				width:25%;
+			}
+			#contact{
+				width:100%;
+				margin-top: 40px;
+			}
+		}
+		
+		@media(max-width:734px) and (min-width: 514px){
+			#events{
+				height:2800px;
+				padding: 15px;
+			}
+			#events .left{
+				float: none;
+				clear:none;
+				width: 100%;
+			}
+			#events .right{
+				float: none;
+				clear:none;
+				width: 100%;
+			}
+			#events .spring{
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				float: none;
+			}
+			#events .summer{
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				float: none;
+			}
+			#events .autumn1{
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				width:45%;
+			}
+			#events .autumn2{
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				float: none;
+				width:45%;
+			}
+			#events .winter1{
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				width:45%;
+			}
+			#events .winter2{
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				float: none;
+				width:45%;
+			}
+			.box{
+				float:none;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width:70%;
+				margin-bottom: 20px;
+			}
+			#lifestyle{
+				height:1800px;
+			}
+			#about{
+				width:100%;
+			}
+			#services{
+				width:50%;
+			}
+			#links{
+				width:50%;
+			}
+			#contact{
+				width:100%;
+				margin-top: 40px;
+			}
+		}
+		@media(max-width:513px){
+			#banner_text{
+				margin-left: 40px;
+			}
+			#events{
+				height:3800px;
+				padding: 15px;
+			}
+			#events .left{
+				float: none;
+				clear:none;
+				width: 100%;
+			}
+			#events .right{
+				float: none;
+				clear:none;
+				width: 100%;
+			}
+			#events .spring{
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				float: none;
+				width:50%;
+			}
+			#events .summer{
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				float: none;
+				width: 70%;
+			}
+			#events .autumn1{
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				float: none;
+				width: 50%;
+				margin-bottom: 7px;
+			}
+			#events .autumn2{
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				float: none;
+				width: 50%;
+				
+			}
+			#events .winter1{
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				float:none;
+				width: 60%;
+				margin-bottom: 7px;
+			}
+			#events .winter2{
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				float: none;
+				width: 60%;
+				
+			}
+			.box{
+				float:none;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width:70%;
+				margin-bottom: 20px;
+			}
+			#lifestyle{
+				height:1800px;
+			}
+			#about{
+				width:100%;
+			}
+			#services{
+				width:50%;
+			}
+			#links{
+				width:50%;
+			}
+			#contact{
+				width:100%;
+				margin-top: 40px;
+			}
+		}
+		@media(min-width:600px) and (max-width:900px){
+			#places_to_visit{
+				height:3000px;
+			}
+		}
+		@media(max-width: 600px){
+			#places_to_visit{
+				height:5000px;
+			}
+		}
 	</style>
 </head>
 <body>
-		<!--<header>
-			<div id="nav-bar">
-				<h2 style="">TRAVEL ITINERARY</h2>
-				<ol style="">
-					<li><a href=""> Home </a></li>
-					<li><a href=""> Escape From > </a></li>
-					<li><a href=""> Stay </a></li>
-					<li><a href=""> Journal </a></li>
-					<li><a href=""> Book Now </a></li>
-
-				</ol>
-			</div>
-		</header>-->
+	
 		<header>
         <div class="container">
             <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: black; height:92px;">
@@ -64,7 +1088,7 @@
 		
 
 		<div id="banner">
-			<img src="../IMAGES/Amsterdam/amsterdam_banner.JPG" id="banner_img" onload="typeWriter()">
+			<img src="../IMAGES/Amsterdam/amsterdam_banner.jpg" id="banner_img" onload="typeWriter()">
 			<h2 id="banner_text" style="" ></h2>
 			<script type="text/javascript">
 				var i = 0;
@@ -83,47 +1107,7 @@
 
 		<div id="places_to_visit" style="background-color: #0b032d;">
 			<h2 id="places_to_visit_text">Exclusive Excursion of the City</h2>
-			<!--
-			<div id="overlay">
-			     <img src="C:\Users\HP\Desktop\amsterdam_places_to_visit.jpg" id="img1" onmouseover="document.getElementById('text').innerHTML='Golden Age Canals';" onmouseout="document.getElementById('text').innerHTML='';">
-			     <p id="text"></p>
-		    </div>
-		    <div id="overlay">
-			     <img src="C:\Users\HP\Desktop\magere_burg_amsterdam.jpg" id="img2" onmouseover="document.getElementById('text2').innerHTML='Magere burg';" onmouseout="document.getElementById('text2').innerHTML='';">
-			     <p id="text2"></p>
-		    </div>
-		    <div id="overlay">
-			     <img src="C:\Users\HP\Desktop\i_amsterdam.jpg" id="img3" onmouseover="document.getElementById('text3').innerHTML=' Rijksmuseum';" onmouseout="document.getElementById('text3').innerHTML='';">
-			     <p id="text3"></p>
-		    </div>
-		    <div id="overlay">
-			     <img src="C:\Users\HP\Desktop\windmill_amsterdam.jpg" id="img4" onmouseover="document.getElementById('text4').innerHTML='Zaanse Schans Windmill';" onmouseout="document.getElementById('text4').innerHTML='';">
-			     <p id="text4"></p>
-		    </div>
-		    <div id="overlay">
-			     <img src="C:\Users\HP\Desktop\damsqaure_amsterdam.jpg" id="img5" onmouseover="document.getElementById('text5').innerHTML='Dam Square';" onmouseout="document.getElementById('text5').innerHTML='';">
-			     <p id="text5"></p>
-		    </div>
-		    <div id="overlay">
-			     <img src="C:\Users\HP\Desktop\botanicalGarden.jpg" id="img6" onmouseover="document.getElementById('text6').innerHTML='Botanical Garden';" onmouseout="document.getElementById('text6').innerHTML='';">
-			     <p id="text6"></p>
-		    </div>
-		    <div id="overlay">
-			     <img src="C:\Users\HP\Desktop\old_church_amsterdan.JPG" id="img7" onmouseover="document.getElementById('text7').innerHTML='Oude Kerk (Old Church)';" onmouseout="document.getElementById('text7').innerHTML='';">
-			     <p id="text7"></p>
-		    </div>
-		    <div id="overlay">
-			     <img src="C:\Users\HP\Desktop\jordan_amsterdam.JPG" id="img8" onmouseover="document.getElementById('text8').innerHTML='Jordan';" onmouseout="document.getElementById('text8').innerHTML='';">
-			     <p id="text8"></p>
-		    </div>
-		    <div id="overlay">
-			     <img src="C:\Users\HP\Desktop\rembrandplein_amsterdam.JPG" id="img9" onmouseover="document.getElementById('text9').innerHTML='Rembrandplein Square';" onmouseout="document.getElementById('text9').innerHTML='';">
-			     <p id="text9"></p>
-		    </div>
-		    <div id="overlay">
-			     <img src="C:\Users\HP\Desktop\nemo_science_amsterdam.JPG" id="img10" onmouseover="document.getElementById('text10').innerHTML='NEMO Science Meuseum';" onmouseout="document.getElementById('text10').innerHTML='';">
-			     <p id="text10"></p>
-		    </div>-->
+			
 		    <div class="image-gallery">
           		<a href="../IMAGES/Amsterdam/damsqaure_amsterdam.JPG" class="img1"> 
             		<i class="fa fa-arrows-alt" aria-hidden="true"></i>
@@ -132,19 +1116,19 @@
             	<a href="../IMAGES/Amsterdam/magere_burg_amsterdam.JPG" class="img2">
               		<i class="fa fa-arrows-alt" aria-hidden="true"></i>
               	</a>
-              	<a href="../IMAGES/Amsterdam/rembrandplein_amsterdam.JPG" class="img3">
+              	<a href="../IMAGES/Amsterdam/rembrandplein_amsterdam.jpg" class="img3">
                 	<i class="fa fa-arrows-alt" aria-hidden="true"></i>
                 </a>
-                <a href="../IMAGES/Amsterdam/rembrandplein_amsterdam.JPG" class="img4">
+                <a href="../IMAGES/Amsterdam/rembrandplein_amsterdam.jpg" class="img4">
                   	<i class="fa fa-arrows-alt" aria-hidden="true"></i>
                 </a>
                 <a href="../IMAGES/Amsterdam/windmill_amsterdam.JPG" class="img5">
                     <i class="fa fa-arrows-alt" aria-hidden="true"></i>
                 </a>
-                <a href="../IMAGES/Amsterdam/old_church_amsterdan.JPG" class="img6">
+                <a href="../IMAGES/Amsterdam/old_church_amsterdan.jpg" class="img6">
                       <i class="fa fa-arrows-alt" aria-hidden="true"></i>
                 </a>
-                <a href="../IMAGES/Amsterdam/I_amsterdam.JPG" class="img7">
+                <a href="../IMAGES/Amsterdam/i_amsterdam.JPG" class="img7">
                         <i class="fa fa-arrows-alt" aria-hidden="true"></i>
                 </a>
                 <a href="../IMAGES/Amsterdam/jordan2.JPG" class="img8">
@@ -163,14 +1147,14 @@
 			<p>On the 5th May the Dutch celebrate Bevrijdingsdag (Liberation day), which marks the end of WWII in The Netherlands. Large festivities are held in parks and on squares in the city.</p>
 		    </br></br>
 			</div>
-			<img src="../IMAGES/Amsterdam/kings_day_amsterdam.JPG" style="float: right;height: 200px;width: 45%;">
+			<img src="../IMAGES/Amsterdam/kings_day_amsterdam.JPG" class="spring"style="">
 
 			<div class="right">
 				</br></br></br>
 			<h3>Summer Amsterdam Events</h3>
 			<p>Summer is the time of open air festivals, theatre and concerts. Probably the most attractive event in summer is the Grachtenfestival, which is held mid-August. It is a series of concerts and shows, culminating with a big concert at the Prinsengracht. Visitors also listen from the canal banks and bridges nearby, because the water echoes the music.</p></br></br></br></br>
 			</div>
-			<img src="../IMAGES/Amsterdam/gratchen_festival_amsterdam.JPG" style="float:left;height: 300px;width: 45%;">
+			<img src="../IMAGES/Amsterdam/gratchen_festival_amsterdam.JPG" class="summer"style="">
 
 			<div class="left">
 				</br></br>
@@ -178,35 +1162,35 @@
 			<p>In the autumn Amsterdam is vibrating with cultural events: books and antique markets, concerts, film festivals and events in museums. Probably the most important of the autumn is IDFA, an International Documentary Film Festival starting in the middle of November, showing documentaries in cinemas all over town. Go see a documentary in the beautiful Tuschinski or in the modern Eye Film Institute in Amsterdam-Noord.Museum Night is another attractive Amsterdam event that takes place in November. </p>
 			</br></br>
 			</div>
-			<img src="../IMAGES/Amsterdam/autumn_amsterdam.JPG" style="float:left;height: 300px;width: 23%;">
-			<img src="../IMAGES/Amsterdam/autumn2.JPG" style="float:right;height: 300px;width: 25%;">
+			<img src="../IMAGES/Amsterdam/autumn_amsterdam.JPG" class="autumn1"style="">
+			<img src="../IMAGES/Amsterdam/autumn2.JPG" class="autumn2"style="">
 
 			<div class="right">
 				</br></br>
 			<h3 style="padding-left: 25px;">Winter Amsterdam Events</h3>
 			<p style="padding: 25px;">Winter is often not very cold in Amsterdam, due to the mild sea climate. The days with freezing temperatures are scarce, but when it happens and the canals freeze, the view of people all ages skating on ice is beautiful.n the evening you should definitely go see the Amsterdam Light Festival event.December hosts three important holidays: New Year's Eve, Christmas and Sinterklaas, the Dutch version of Santa Claus.Winter is the most quiet of the seasons except for the New Year Eve Amsterdam events and celebrations at the Dam square.</p>
 			</div>
-			<img src="../IMAGES/Amsterdam/winter1_amsterdam.JPG" style="float:left;height: 300px;width: 22%;">
-			<img src="../IMAGES/Amsterdam/winter2_amsterdam.JPG" style="float:right;height: 300px;width: 26%;">
+			<img src="../IMAGES/Amsterdam/winter1_amsterdam.JPG" class="winter1"style="">
+			<img src="../IMAGES/Amsterdam/winter2_amsterdam.JPG" class="winter2"style="">
 		</div>
 
 		<div id="lifestyle">
 			<h1 id="lifestyle_header">Lifestyle and Fun</h1>
-			<div class="box">
+			<div class="box" id="first">
 				<img src="../IMAGES/Amsterdam/nightlife_amsterdam.JPG">
 				<h4>NightLife Ticket</h4>
 				<p>It is definitely worth to consider this nightlife ticket. It will most likely save you time and money. For 7 days you get free entrance to Amsterdam clubs, free shots, beers & cocktails, lazertag & bowling, free UBER and much more.</p>
 				<a href="https://amsterdamnightlifeticket.com/">Know More</a>
 			</div>
 
-			<div class="box">
+			<div class="box" id="second">
 				<img src="../IMAGES/Amsterdam/amsterdam_clubs.JPG">
 				<h4>Amsterdam Clubs</h4>
 				<p>When it comes to nightlife in Amsterdam, there are venues, dance festivals and club nights to suit every taste! DJs keep the crowd going with everything from techno, dub step and trance to hip-hop, funk and deep house.There are worth.</p>
 				<a href="https://www.iamsterdam.com/en/see-and-do/whats-on/clubbing-nightlife-amsterdam">Know More</a>
 			</div>
 
-			<div class="box">
+			<div class="box" id="third">
 				<img src="../IMAGES/Amsterdam/life_around_squares.JPG">
 				<h4>Life around Squares</h4>
 				<p>Amsterdam's nightlife centres around Leidseplein.Venues such as Melkweg can be found.Irish pubs,cafés,nightclubs line the square and the streets. For a classy night out,the city theatre, tram stop on the square itself.</p>
