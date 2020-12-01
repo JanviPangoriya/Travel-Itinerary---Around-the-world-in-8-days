@@ -483,7 +483,7 @@
 .img4
 {
     grid-area: img4;
-    background-image: url("../IMAGES/Paris/versailles.JPG");
+    background-image: url("../IMAGES/Paris/versailles_paris.JPG");
 }
 .img5
 {
@@ -494,7 +494,7 @@
 {
     grid-area: img6;
     min-height: 51.5rem;
-    background-image: url("../IMAGES/Paris/disneyland.JPG");
+    background-image: url("../IMAGES/Paris/disneyland_paris.JPG");
 
 }
 .img7
