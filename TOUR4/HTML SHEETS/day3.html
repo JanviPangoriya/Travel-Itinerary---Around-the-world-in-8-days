@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day 3-Welcome to Berlin</title>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+	<link rel="stylesheet" type="text/css" href="../CSS SHEETS/day2.css">
+</head>
+<body>
+	
+		<header>
+        <div class="container">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: black; height:92px;">
+                <a class="navbar-brand" href="#" style="color: white;">Travel Itinerary</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: grey;margin-right: 10px;color: black;">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Home </a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Escape To</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Stay</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Book Now</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                      </li>
+                      
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    </header>
+		
+
+		<div id="banner">
+			<img src="../IMAGES/Berlin/berlin_0.JPG" id="banner_img" onload="typeWriter()">
+			<h2 id="banner_text" style="" ></h2>
+			<script type="text/javascript">
+				var i = 0;
+				var txt = 'Paris';
+				var speed = 350;
+
+				function typeWriter() {
+  					if (i < txt.length) {
+   					 	document.getElementById("banner_text").innerHTML += txt.charAt(i);
+    					i++;
+    					setTimeout(typeWriter, speed);
+  					}
+				}
+			</script>
+		</div >
+
+		<div id="places_to_visit" style="background-color: #0b032d;">
+			<h2 id="places_to_visit_text">Exclusive Excursion of the City</h2>
+			
+		    <div class="image-gallery">
+          		<a href="../IMAGES/Berlin/berlin_4.JPG" class="img1"> 
+            		<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+            	</a>
+
+            	<a href="../IMAGES/Berlin/berlin_1.JPG" class="img2">
+              		<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+              	</a>
+              	<a href="../IMAGES/Berlin/berlin_3.JPG" class="img3">
+                	<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+                <a href="../IMAGES/Berlin/berlin_2.JPG" class="img4">
+                  	<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+                <a href="../IMAGES/Berlin/berlin_8.JPG" class="img5">
+                    <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+                <a href="../IMAGES/Berlin/berlin_7.JPG" class="img6">
+                      <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+                <a href="../IMAGES/Berlin/berlin_6.JPG" class="img7">
+                        <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+                <a href="../IMAGES/Berlin/berlin_5.JPG" class="img8">
+                          <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+        </div>
+
+		</div>
+
+		<div id="events">
+			<h1 id="event_header">Events And Festivals</h1>
+			<p id="event_text_intro">The vibrant city of Berlin is host to a great range of annual events and festivals, with everything from jazz festivals, to light shows, to film festivals. Whether you are in the city to sight-see over the weekend or on a trip for business, plan your stay right to make sure it coincides with one of these unique festivals in Berlin. </p>
+			<div class="left">
+			<h3>Festival of Lights</h3>
+			<p>Every year, millions of visitors flock to Berlin to see the city lit by amazing illuminations. The city is majestically transformed as artistic lights are placed around landmark architecture and venues for the Festival of Lights (Berlin Leuchtet). The festival aims to tell stories and draw attention to unique, hidden and essential spots in Berlin. The Festival of Lights is one of the largest festivals of its kind in the world.  </p>
+			<p>Since 2015, the World Championship of projection mapping has been a permanent feature. Head to the Kohlhoff Tower at the Potsdamer Platz to witness some of the world's most talented video mapping artists compete against each other.  </p>
+		    </br></br>
+			</div>
+			<img src="../IMAGES/Berlin/events1_berlin.JPG" class="spring"style="">
+
+			<div class="right">
+				</br></br></br>
+			<h3>JazzFest</h3>
+			<p>Towards the end of autumn, the city of Berlin turns in to a hub for fans of jazz from around the world. For 44 years the Jazzfest Berlin (Berlin Jazz Festival) has been held in a variety of locations around the city. It showcases the diverse talents of international jazz musicians and ensembles. The popular Jazzfest Berlin takes place from November 5 to November 8 and this year it will go partly off-stage, with artists and cultural workers sharing online projects. </p></br></br></br></br>
+			</div>
+			<img src="../IMAGES/Berlin/events2_berlin.JPG" class="summer"style="">
+
+			<div class="left">
+				</br></br>
+			<h3>Berlinale</h3>
+			<p>The Berlin International Film Festival, also known as the Berlinale, has become one of the most important international film festivals, second after Cannes'. Taking place in February every year, it features over 400 films, has sold over 335,000 tickets, and welcomes nearly 20,000 professional visitors from 127 countries. Access the full programme as of January, and plan ahead for your next stay at Radisson Blu Berlin as this is a very popular event. </p>
+			</br></br>
+			</div>
+			<img src="../IMAGES/Berlin/events3_berlin.JPG" class="autumn1"style="">
+			<img src="../IMAGES/Berlin/events4_berlin.JPG" class="autumn2"style="">
+
+			<div class="right">
+				</br></br>
+			<h3 style="padding-left: 25px;">Carnival Of Cultures</h3>
+			<p style="padding: 25px;">The diversity of Berlin is celebrated every May at the Karneval der Kulturen (Carnival of Cultures). This 4 day urban festival shows the many faces of Berlin with its free and open programme of events. Throughout the Carnival, visitors can celebrate cultural and ethnic diversity with a range of events around Blücherplatz. There are hundreds of market stalls with tasty food, traditional craft, art and gifts, local and international bands performing, and street performers showing their skill.</p>
+			</div>
+			<img src="../IMAGES/Berlin/events5_berlin.JPG" class="winter1"style="">
+			<img src="../IMAGES/Berlin/events6_berlin.JPG" class="winter2"style="">
+		</div>
+
+		<div id="lifestyle">
+			<h1 id="lifestyle_header">Lifestyle and Fun</h1>
+			<div class="box" id="first">
+				<img src="../IMAGES/Berlin/flash1_berlin.JPG">
+				<h4>Friedrichstadt Palast</h4>
+				<p>More than one hundred artists on the biggest theatre stage in the world. With half a million guests every year, the Palast is the #1 theatre in Berlin.It is the first choice for one wishing to experience utterly unique and thoroughly fascinating </p>
+				<a href="https://www.tripadvisor.in/Attraction_Review-g187323-d190603-Reviews-Friedrichstadt_Palast-Berlin.html">Know More</a>
+			</div>
+
+			<div class="box" id="second">
+				<img src="../IMAGES/Berlin/flash2_berlin.JPG">
+				<h4>Sealife Berlin</h4>
+				<p>The Aquarium Berlin in Berlin is one of Germany's largest aquariums. The aquarium was built in 1913 as part of the Berlin Zoological Garden complex.The Aquarium has been ranked among the public aquariums with the world’s greatest biodiversity.</p>
+				<a href="https://www.welcome-to-berlin.com/en-us/discover-berlin/tickets/698-skip-the-line-aquadom-and-sea-life-berlin-tickets.html">Know More</a>
+			</div>
+
+			<div class="box" id="third">
+				<img src="../IMAGES/Berlin/flash3_berlin.JPG">
+				<h4>Asisi Panorma</h4>
+				<p>An enormous, life-size panorama, known as THE WALL, to recreate life on both sides of the notorious Berlin Wall, which divided the city for almost 30 years, on an imaginary autumn day.Seen from atop a 13-foot and learn about life in the shadow of the Wall at a photo exhibition too.</p>
+				<a href="https://www.tripadvisor.in/AttractionProductReview-g187323-d17684427-Asisi_Panorama_Berlin_Entrance_Ticket-Berlin.html">Know More</a>
+			</div>
+		</div>
+
+
+		<div id="footer">
+			<h2 id="contact_text">Contact Us</h2>
+			<div id="about">
+				<h3>About Us</h3>
+				<p>
+					Crave for wanderlust? Welcome to Travel Iternary! We travel not to escape life but for life not to escape us. If you are young enough to learn to be better, we urge you to travel as far and as widely as possible. Step out of floors. Find out the way how other people live and enjoy life. Look at the unnamed wonders of the world. Live, travel, adventure, bless and don't be sorry. The world is a book and people who don't travel read only a single page. So wake up, make memories, find you way!Each of us have wings. All you have to do is FLY!
+				</p>
+			</div>
+			<div id="services">
+				<h3>Services</h3>
+				<ul>
+					<li><a>Attractions</a></li>
+					<li><a>Food</a></li>
+					<li><a>Accomodation</a></li>
+					<li><a>Book a Tour</a></li>
+					<li><a>Events</a></li>
+					<li><a>Life Style</a></li>
+				</ul>
+			</div>
+
+			<div id="links">
+				<h3>Quick Links</h3>
+				<ul>
+					<li><a>About Us</a></li>
+					<li><a>Contribute</a></li>
+					<li><a>Privacy Policy</a></li>
+					<li><a>Site Maps</a></li>
+					<li><a>Disclaimer</a></li>
+					
+				</ul>
+			</div>
+
+			<div id="contact">
+				<h3>Contact</h3>
+                <ul>
+                    <li><i class="fa fa-home"></i><span>Mathura,Uttar Pradesh</span></li>
+                    <li><i class="fa fa-envelope"></i><span> travel.itinerary.@gmail.com</span></li>
+                    <li><i class="fa fa-phone-square"></i><span>+91 7896541230</span></li>
+                    <li><i class="fa fa-facebook-official"></i><span>GLA University</span></li>
+                </ul>
+            </div>
+</body>
+</html>
