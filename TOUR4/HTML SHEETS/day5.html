@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day 5-Welcome to Vienna</title>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+	<link rel="stylesheet" type="text/css" href="../CSS SHEETS/day3.css">
+</head>
+<body>
+	
+		<header>
+        <div class="container">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: black; height:92px;">
+                <a class="navbar-brand" href="#" style="color: white;">Travel Itinerary</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: grey;margin-right: 10px;color: black;">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Home </a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Escape To</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Stay</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Book Now</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                      </li>
+                      
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    </header>
+		
+
+		<div id="banner">
+			<img src="../IMAGES/Vienna/vienna000.JPG" id="banner_img" onload="typeWriter()">
+			<h2 id="banner_text" style="" ></h2>
+			<script type="text/javascript">
+				var i = 0;
+				var txt = 'Vienna';
+				var speed = 350;
+
+				function typeWriter() {
+  					if (i < txt.length) {
+   					 	document.getElementById("banner_text").innerHTML += txt.charAt(i);
+    					i++;
+    					setTimeout(typeWriter, speed);
+  					}
+				}
+			</script>
+		</div >
+
+		<div id="places_to_visit" style="background-color: #0b032d;">
+			<h2 id="places_to_visit_text">Exclusive Excursion of the City</h2>
+			
+		    <div class="image-gallery">
+          		<a href="../IMAGES/Vienna/schonbrunn_austria.JPG" class="img1"> 
+            		<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+            	</a>
+
+            	<a href="../IMAGES/Vienna/belverde_austria.JPG" class="img2">
+              		<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+              	</a>
+              	<a href="../IMAGES/Vienna/vienna1_austria.JPG" class="img3">
+                	<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+                <a href="../IMAGES/Vienna/karlskirche_austria.JPG" class="img4">
+                  	<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+                <a href="../IMAGES/Vienna/donauiensel_austria.JPG" class="img5">
+                    <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+                <a href="../IMAGES/Vienna/hauz_vienna.JPG" class="img6">
+                      <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+                <a href="../IMAGES/Vienna/rathur_austria.JPG" class="img7">
+                        <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+                <a href="../IMAGES/Vienna/cafe_austria.JPG" class="img8">
+                          <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+        </div>
+
+		</div>
+
+		<div id="events">
+			<h1 id="event_header">Events And Festivals</h1>
+			<p id="event_text_intro">The vibrant city of Vienna is host to a great range of annual events and festivals, with everything from jazz festivals, to light shows, to film festivals. Whether you are in the city to sight-see over the weekend or on a trip for business, plan your stay right to make sure it coincides with one of these unique festivals in Berlin. </p>
+			<div class="left">
+			<h3>Life Ball Festival</h3>
+			<p>Vienna's lifeball is a surprising success story. It was started in 1993 in Vienna as an AIDS charity event and quickly became the biggest, most color- and successful event of its sort throughout Europe.The ball's aim is rather obvious: fund raising to support various AIDS related activities from preventation to counselling and direct aid to HIV positive people.</p>
+			
+		    </br></br>
+			</div>
+			<img src="../IMAGES/Vienna/events1_austria.JPG" class="spring"style="">
+
+			<div class="right">
+				</br></br></br>
+			<h3>Donauiensel</h3>
+			<p>Open-air festival 'Donauinselfest' has taken place over 20 time and is already a favourite among locals and visitors. The festival is organised once a year and spreads all over the popular recreational mecca Danube Island. It attracts up to 3 million visitors with free entry and international stars. The island can easily accommodate this amount of visitors: More than 19 stages ('isles') offer entertainment from pop, rock, jazz to hip hop. Don't miss it! </p></br></br></br></br>
+			</div>
+			<img src="../IMAGES/Veinna/events2_austria.JPG" class="summer"style="">
+
+			<div class="left">
+				</br></br>
+			<h3>The Film Festival</h3>
+			<p>Vienna's major film festival Viennale took place for the first time in 1960. Since then it has aimed to present international and Austrian films of high-quality and is proud of its international reputation.Venues are spread over Vienna's historic centre. Usually, about 200 films, documentaries and short films are broadcast and attract more than 70,000 visitors!  </p>
+			</br></br>
+			</div>
+			<img src="../IMAGES/Vienna/events3_austria.JPG" class="autumn1"style="">
+			<img src="../IMAGES/Vienna/events4_austria.JPG" class="autumn2"style="">
+
+			<div class="right">
+				</br></br>
+			<h3 style="padding-left: 25px;">New Years Eve</h3>
+			<p style="padding: 25px;">At midnight you will hear famous Pummerin (St. Stephen’s Cathedral) strike! Apart from that, everything can happen during the biggest celebration of the year. You can opt for an open-air party inclusive last minute waltz course all over Vienna’s first district (‘Silvesterpfad’), escape three-four time at various clubs.Just before midnight you can watch the official fireworks, which are supported by considerable private efforts, illuminate the city!</p>
+			</div>
+			<img src="../IMAGES/Vienna/events5_vienna.JPG" class="winter1"style="">
+			<img src="../IMAGES/Vienna/events6_vienna.JPG" class="winter2"style="">
+		</div>
+
+		<div id="lifestyle">
+			<h1 id="lifestyle_header">Lifestyle and Fun</h1>
+			<div class="box" id="first">
+				<img src="../IMAGES/Vienna/flashcard1_austria.JPG">
+				<h4>Giant Ferris Wheel</h4>
+				<p>Visiting the Prater, a large natural park between the Danube and the Danube Canal, is a little like stepping into another world.A highlight for sightseers is taking a ride on the famous Giant Wheel,landmark that has provided views over the city.</p>
+				<a href="https://wienerriesenrad.com/en/home-2/">Know More</a>
+			</div>
+
+			<div class="box" id="second">
+				<img src="../IMAGES/Vienna/flashcard2_austria.JPG">
+				<h4>Veinna State Opera</h4>
+				<p>One of the world's largest and most splendid theaters, the Vienna State Opera House (Wiener Staatsoper) has hosted many of the world's most prominent composers, conductors, soloists, and dancers.</p>
+				<a href="https://www.wien.info/en/music-stage-shows/opera-operetta/state-opera">Know More</a>
+			</div>
+
+			<div class="box" id="third">
+				<img src="../IMAGES/Vienna/flashcard3_austria.JPG">
+				<h4>Burg Theatre</h4>
+				<p>The National Theater, has been famous for its productions of German-language plays. After devastation by bombing and fire in 1945, the theater eventually reopened in 1955 and has since grown in stature as the country's most important theater.</p>
+				<a href="https://www.wien.info/en/sightseeing/sights/from-a-to-z/national-theater">Know More</a>
+			</div>
+		</div>
+
+
+		<div id="footer">
+			<h2 id="contact_text">Contact Us</h2>
+			<div id="about">
+				<h3>About Us</h3>
+				<p>
+					Crave for wanderlust? Welcome to Travel Iternary! We travel not to escape life but for life not to escape us. If you are young enough to learn to be better, we urge you to travel as far and as widely as possible. Step out of floors. Find out the way how other people live and enjoy life. Look at the unnamed wonders of the world. Live, travel, adventure, bless and don't be sorry. The world is a book and people who don't travel read only a single page. So wake up, make memories, find you way!Each of us have wings. All you have to do is FLY!
+				</p>
+			</div>
+			<div id="services">
+				<h3>Services</h3>
+				<ul>
+					<li><a>Attractions</a></li>
+					<li><a>Food</a></li>
+					<li><a>Accomodation</a></li>
+					<li><a>Book a Tour</a></li>
+					<li><a>Events</a></li>
+					<li><a>Life Style</a></li>
+				</ul>
+			</div>
+
+			<div id="links">
+				<h3>Quick Links</h3>
+				<ul>
+					<li><a>About Us</a></li>
+					<li><a>Contribute</a></li>
+					<li><a>Privacy Policy</a></li>
+					<li><a>Site Maps</a></li>
+					<li><a>Disclaimer</a></li>
+					
+				</ul>
+			</div>
+
+			<div id="contact">
+				<h3>Contact</h3>
+                <ul>
+                    <li><i class="fa fa-home"></i><span>Mathura,Uttar Pradesh</span></li>
+                    <li><i class="fa fa-envelope"></i><span> travel.itinerary.@gmail.com</span></li>
+                    <li><i class="fa fa-phone-square"></i><span>+91 7896541230</span></li>
+                    <li><i class="fa fa-facebook-official"></i><span>GLA University</span></li>
+                </ul>
+            </div>
+</body>
+</html>
