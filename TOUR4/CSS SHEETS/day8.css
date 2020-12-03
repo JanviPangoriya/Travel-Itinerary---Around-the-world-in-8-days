@@ -725,10 +725,10 @@
 			font-size: 10px;
 		}
 		#events .spring{
-			float: right;height: 150px;width: 35%;
+			float: right;height: 120px;width: 35%;
 		}
 		#events .summer{
-			float:left;height: 300px;width: 45%;
+			float:left;height: 200px;width: 35%;
 		}
 		#events .autumn1{
 			float:left;height: 300px;width: 23%;
