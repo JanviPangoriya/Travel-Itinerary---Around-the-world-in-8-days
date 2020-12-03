@@ -500,7 +500,7 @@
 .img7
 {
     grid-area: img7;
-    background-image: url("../IMAGES/Milan/milan7.JPG");
+    background-image: url("../IMAGES/Milan/milan7..JPG");
 }
 .img8
 {
@@ -728,7 +728,7 @@
 			float: right;height: 200px;width: 45%;
 		}
 		#events .summer{
-			float:left;height: 300px;width: 45%;
+			float:left;height: 250px;width: 35%;
 		}
 		#events .autumn1{
 			float:left;height: 300px;width: 23%;
