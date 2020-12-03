@@ -1,0 +1,109 @@
+*
+{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+}
+body{
+    font-family: 'Kaushan Script', cursive;
+    background-color: rgb(24, 8, 66) !important;
+    font-size: 20px;
+    position: relative;
+    overflow-x:hidden;
+}
+h2{
+    font-weight: 700 !important;
+    font-size: 50px !important;
+    margin: 0 0 20px;
+    color: white;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+}
+.text-center
+{
+    padding: 40px 0PX 0PX 0PX;
+}
+ul{
+    margin: 0;
+    list-style-type: none;
+}
+#filter-list{
+    display: inline-block;
+    border: 1px solid #dddddd;
+    border-radius: 30px;
+    margin: 0 0 60px;
+}
+#filter-list li{
+    display: inline-block;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: 500;
+    padding: 0 20px;
+    min-width: 150px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+#filter-list li.active,
+#filter-list li:hover
+{
+    background-color: black;
+    color: red;
+}
+.gallery-outer
+{
+    width: 100%;
+    float: left;
+    height: auto;
+    padding: 0 1px;
+}
+.gallery-items li{
+    width: 25%;
+    float: left;
+    padding: 0 1px 2px;
+}
+.gallery-items li img{
+    width: 100%;
+    height: 250px;
+    transition: all 0.3s ease-in-out;
+}
+.gallery-inner
+{
+    width: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.gallery-overlay
+{
+    width: 100%;
+    position: absolute;
+    left: 0;top: 50%;
+    text-align: center;
+    transform: translateY(-50%) scale(0);
+    transition: all 0.3s ease-in-out;
+}
+.gallery-overlay a{
+    width: 60px;
+    line-height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    color: #53bff0;
+    font-size: 20px;
+}
+.gallery-overlay a:hover{
+    background-color: #53bff0;
+    color: #fff;
+}
+.gallery-items li:hover .gallery-overlay
+{
+    transform: translateY(-50%) scale(1);
+}
+.gallery-items li:hover img{
+    transform: scale(1.2);
+}
