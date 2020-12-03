@@ -1,0 +1,972 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: black;
+}
+header
+{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+.navbar
+{
+    padding: 20px 0;
+}
+.navbar-brand
+{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    margin-left: 10px;
+}
+.nav-item
+{
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 5px;
+    font-family: 'Kaushan Script', cursive;
+    margin-right: 10px;
+}
+
+.dropdown-item:hover{
+    background-color: red;
+}
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item.active .nav-link
+{
+    background-color: red;
+}
+.navbar-light .navbar-nav .nav-item .nav-link
+{
+    color: white;
+    padding: 5px;
+}
+.banner
+{
+background-image: url("../Images/Taipei/extra/taipei.jpg");
+position: relative;
+background-size: cover;
+background-repeat: no-repeat;
+height: 100vh;
+width: 100vw;
+padding: 250px 0 200px;
+background-position: center;
+}
+.banner h1
+{
+    margin: 0;
+    padding: 0;
+    font-size: 2.8em;
+    font-weight: 1000;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    text-transform: uppercase;
+    font-variant: small-caps;
+}
+.banner p
+{
+    margin: 1em 0 0;
+    padding: 0;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-weight: bold;
+    color: black;
+}
+.navbar-light .navbar-toggler
+{
+    border: none;
+    color: white;
+    border: 2px solid #7f7f7f;
+    border-radius: 0;
+    outline: none;
+}
+.navbar-collapse
+{
+    background-color: rgb(43, 29, 59);
+}
+@media (max-width:768px)
+{.banner
+    {
+   padding: 200px 0;
+    }
+    .banner h2
+    {
+        font-size: 1.8em;
+    }
+
+}
+.container1
+{
+    width: 100%;
+    max-width: 120rem;
+    height: auto;
+    margin: auto;
+    padding: 0 1.5rem;   
+}
+.image-gallery
+{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5rem;
+    grid-template-areas: 
+            'img1 img2 img3 img3'
+            'img1 img4 img5 img6'
+            'img7 img7 img8 img6';
+}
+.image-gallery a{
+    width: 100%;
+    height: 25rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:  2px solid white;
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-gallery a i{
+    color: rgba(255, 255, 255,.6);
+    font-size: 3rem;
+    position: relative;
+    z-index: 100;
+    padding: 1rem 3rem;
+    border: 2px solid rgba(255, 255, 255,.6);
+    border-radius: 0.4rem;
+    opacity: 0;
+    transition:opacity 0.5s;
+}
+.image-gallery a::before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 100%;
+    transition: opacity 0.5s;
+    background-color: rgba(0,0,0,0.8);
+}
+.image-gallery a:hover i,
+.image-gallery a:hover::before
+{
+    opacity: 1;
+}
+.img1
+{
+    grid-area: img1;
+    background-image: url("../Images/Taipei/festivals/battle\ parade.jpg");
+    min-height: 51.5rem;
+
+}
+.img2
+{
+    grid-area: img2;
+    background-image: url("../Images/Taipei/festivals/fire\ fishing.jpg");
+}
+.img3
+{
+    grid-area: img3;
+    background-image: url("../Images/Taipei/festivals/ghost\ festival.jpg");
+}
+.img4
+{
+    grid-area: img4;
+    background-image: url("../Images/Taipei/festivals/hengchuenpole.jpg");
+}
+.img5
+{
+    grid-area: img5;
+    background-image: url("../Images/Taipei/festivals/international\ ballon\ fetival.jpg");
+}
+.img6
+{
+    grid-area: img6;
+    min-height: 51.5rem;
+    background-image: url("../Images/Taipei/festivals/lantern\ fetivals.jpg");
+
+}
+.img7
+{
+    grid-area: img7;
+    background-image: url("../Images/Taipei/festivals/sand\ sculpture\ championship.jpg");
+}
+.img8
+{
+    grid-area: img8;
+    background-image: url("../Images/Taipei/festivals/taipei101.jpg");
+}
+
+.container1 h1 ,.container4 h1
+{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 1000;
+    font-family: 'Kaushan Script', cursive;
+    color: skyblue;
+    font-size: 50px;
+    font-variant: small-caps;
+}
+
+.container2 h1
+{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 1000;
+    font-family: 'Kaushan Script', cursive;
+    color: skyblue;
+    font-size: 50px;
+    font-variant: small-caps;
+}
+
+.section1-1 h3
+{
+    /* text-align: center; */
+    color:yellow;
+    letter-spacing: 1.034px;
+    font-size: 35px;
+    margin-top: 20px;
+    line-height: 50px;
+    font-style: bold;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    text-decoration:underline yellow;
+}
+.section1-1 img{
+    height: 200px;
+    width: 350px;
+    margin-left: 30px;
+    float: left;
+    margin-right: 10px;
+    opacity: 0.9;
+    border: 3px solid white;
+}
+.section1-1 p
+{
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size:20px;
+    letter-spacing: 1.05px;
+    line-height: 30px;
+    text-align: justify; 
+    padding-left: 20px; 
+    color: white;
+    padding-right: 10px;
+}
+.section1-1 
+{
+    margin-bottom: 30px;
+}
+.section1-2 h3
+{
+    /* text-align: center; */
+    color:yellow;
+    margin-left: 50px;
+    letter-spacing: 1.034px;
+    font-size: 35px;
+    margin-top: 20px;
+    line-height: 50px;
+    font-style: bold;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    text-decoration:underline yellow;
+}
+.section1-2 img{
+    height: 200px;
+    width: 350px;
+    margin-left: 30px;
+    float: right;
+    margin-right: 10px;
+    opacity: 0.9;
+    border: 3px solid white;
+}
+.section1-2 p
+{
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size:20px;
+    letter-spacing: 1.05px;
+    line-height: 30px;
+    text-align: justify; 
+    padding-left: 20px; 
+    color: white;
+    padding-right: 10px;
+}
+.section1-2 
+{
+    margin-bottom: 30px;
+ }
+iframe
+{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.box-shadow{
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+ } 
+ .card img{
+    height: 250px;
+    
+ } 
+ .card
+ {
+    margin: 10px;
+ } 
+ .container3 h1
+ {
+     text-align: center;
+     margin-top: 20px;
+     font-weight: 800;
+     font-family: 'Kaushan Script', cursive;
+     background-color: black;
+     color: skyblue;
+     font-size: 50px;
+     font-variant: small-caps;
+ }
+ .container3 img
+ {
+     margin-left: 10px;
+     float: left;
+     margin-top: 10px;
+     width: 320px;
+     height: 400px;
+ }
+ .container3 img:hover{
+     transform: scale(1.2);
+     transition: .8s;
+ }
+.box:hover .card-body,.box:hover .card-footer{
+    background-color: black;
+    color: white;
+    font-size: 15.85px;
+}
+.box:hover .box-shadow
+{
+    border: 2px solid red;
+}
+.container5 .main-content
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 40px;
+    color: grey;
+}
+.container5 footer
+{
+    width: 100%;
+    background-color: black;
+    opacity: .8;
+}
+.container5 .sec-1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 10px;
+}
+.container5 .about
+{
+    width: 40%;
+}
+.container5 .sec-1 h2{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+.container5 .about p{
+    text-align: justify;
+    color: grey;
+    line-height: 24px;
+    margin-top: 10px;
+}
+.container5 .sec-1 ul{
+    list-style: none;
+}
+.container5 hr
+{
+    text-shadow: none;
+    opacity: .2;
+    
+}
+.container5 .sec-1 ul li
+{
+    padding: 5px;
+}
+.container5 a{
+    text-decoration: none;
+    color: gray;
+}
+.container5 a:hover{
+    color: rgb(221, 18, 214);
+}
+.container5 span{
+    color: grey;
+}
+.container5 i{
+    color: grey;
+    font-size: 20px;
+}
+.container5 .sec-2 
+{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+.container5 .sec-2 p{
+    color: grey;
+    font-size: 35px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.container5 .sec-2 a
+{
+    display: inline-block;
+    padding: 10px 25px;
+    background-color:red;
+    color: white;
+    margin-left:10px ;
+    border-radius: 15px;
+    font-size: 18px;
+}
+.container5 .sec-2 a:hover
+{
+    background-color: orange;
+    color: black;
+}
+.container5 .sec-3
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+}
+.container5 .sec-3 ul
+{
+    list-style: none;
+    margin: 20px;
+}
+.container5 .sec-3 ul li{
+    display: inline-block;
+    width: 60px;
+    height: 60;
+    padding: 20px;
+    background-color: #424242;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.container5 .sec-3 ul li i{
+    color: white;
+    font-size: 24px;
+    line-break: 20px;
+    text-align: center;
+}
+.container5 .sec-3 ul li:nth-child(1):hover
+{
+    background-color: #3b5999;
+}
+.container5 .sec-3 ul li:nth-child(2):hover
+{
+    background-color: #55acee;
+}
+.container5 .sec-3 ul li:nth-child(3):hover
+{
+    background-color: #dd4b39;
+}
+.container5 .sec-3 ul li:nth-child(4):hover
+{
+    background-color: #0077B5;
+}
+
+.container5 .sec-3 ul li:nth-child(5):hover
+{
+    background-color: #ea4c89;
+}
+.container5 .sec-4 
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    padding: 30px;
+}
+.container5 .sec-4 p{
+    color: gray;
+    position: relative;
+}
+.container5 .sec-4 p::after
+{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    background-color: yellow;
+    transition: all .3s;
+}
+.container5 .sec-4 p:hover::after{
+    width: 100%;
+}
+.container5 h1
+{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 800;
+    font-family: 'Kaushan Script', cursive;
+    color: skyblue;
+    font-size: 50px;
+    font-variant: small-caps;
+}
+
+@media (max-width:900px)
+{
+    .image-gallery
+    {
+        grid-template-areas: 
+        'img1 img1 img2 img2'
+        'img1 img1 img3 img3'
+        'img4 img4 img5 img5'
+
+        'img6 img7 img7 img7'
+        'img8 img8 img8 img8';    
+    }
+    .image-gallery a
+    {
+        height: 20rem;
+    }
+    .img1{
+        min-height: 41.5rem;
+    }
+    .img6{
+       min-height: 20rem;
+    }
+    /* .container1 h1,.container2 h1,.container3 h1
+    {
+        font-size: 22px;
+        font-weight: bold;
+        -webkit-text-stroke:.5px white;
+    } */
+    .section1-1 h3 ,.section1-2 h3
+    {
+        font-size: 30px;
+        margin-left: 12px;
+        margin-bottom: 0;
+    }
+    .container3 iframe
+    {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}
+
+@media (max-width:600px)
+{
+   .image-gallery
+   {
+       grid-template-areas: 
+       'img1 img1 img1 img1'
+       'img2 img2 img2 img2'
+       'img3 img3 img3 img3'
+       'img4 img4 img4 img4'
+       'img5 img5 img5 img5'
+       'img6 img6 img6 img6'
+       'img7 img7 img7 img7'
+       'img8 img8 img8 img8';    
+   }
+   .image-gallery a,.img1,.img6
+   {
+       height: 20rem;
+       min-height: 20rem;
+   }
+   .section1-2 img,.section1-1 img
+   {
+       width: 98%;
+       margin: 8px auto;
+       padding: 10px;
+       margin-left: 5px;
+       margin-right: 5px;
+       float: none;
+       margin-bottom: 5px;
+   }
+   .section1-2 p,.section1-1 p 
+   {
+       float: none;
+       width: 100%;
+       margin: 5px;
+       text-align: justify;
+   }
+   .section1-1 h3 ,.section1-2 h3
+   {
+       margin-top: 5px;
+       text-align: center;
+       text-decoration: none;
+   }
+   .container3 iframe
+   {
+       float: none;
+       display: block;
+       margin: 0 auto;     
+   }
+}
+@media(max-width:765px)
+{
+    .container5 .main-content
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 40px;
+    color: grey;
+}
+.container5 footer
+{
+    width: 100%;
+    background-color: #26272b;
+    opacity: .8;
+}
+.container5 .sec-1
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 10px;
+}
+.container5 .about
+{
+    width: 100%;
+    margin-bottom: 25px;
+}
+.container5 .sec-1 h2{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+.container5 .about p{
+    text-align: justify;
+    color: grey;
+    line-height: 24px;
+    margin-top: 10px;
+}
+.container5 .sec-1 ul{
+    list-style: none;
+}
+.container5 hr
+{
+    text-shadow: none;
+    opacity: .2;
+    
+}
+.container5 .sec-1 ul li
+{
+    padding: 5px;
+}
+.container5 a{
+    text-decoration: none;
+    color: gray;
+}
+.container5 a:hover{
+    color: rgb(221, 18, 214);
+}
+.container5 span{
+    color: grey;
+}
+.container5 i{
+    color: grey;
+    font-size: 20px;
+}
+.container5 .sec-2 
+{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+.container5 .sec-2 p{
+    color: grey;
+    font-size: 24px;
+    padding: 0;
+}
+.container5 .sec-2 a
+{
+    display: inline-block;
+    padding: 10px 25px;
+    background-color:red;
+    color: white;
+    margin-left:10px ;
+    border-radius: 15px;
+    font-size: 18px;
+}
+.container5 .sec-2 a:hover
+{
+    background-color: orange;
+    color: black;
+}
+.container5 .sec-3
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+}
+.container5 .sec-3 ul
+{
+    list-style: none;
+    margin: 20px;
+}
+.container5 .sec-3 ul li{
+    display: inline-block;
+    width: 60px;
+    height: 60;
+    padding: 20px;
+    background-color: #424242;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.container5 .sec-3 ul li i{
+    color: white;
+    font-size: 24px;
+    line-break: 20px;
+    text-align: center;
+}
+.container5 .sec-3 ul li:nth-child(1):hover
+{
+    background-color: #3b5999;
+}
+.container5 .sec-3 ul li:nth-child(2):hover
+{
+    background-color: #55acee;
+}
+.container5 .sec-3 ul li:nth-child(3):hover
+{
+    background-color: #dd4b39;
+}
+.container5 .sec-3 ul li:nth-child(4):hover
+{
+    background-color: #0077B5;
+}
+
+.container5 .sec-3 ul li:nth-child(5):hover
+{
+    background-color: #ea4c89;
+}
+.container5 .sec-4 
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    padding: 30px;
+}
+.container5 .sec-4 p{
+    color: gray;
+    position: relative;
+}
+.container5 .sec-4 p::after
+{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    background-color: yellow;
+    transition: all .3s;
+}
+.container5 .sec-4 p:hover::after{
+    width: 100%;
+}
+}
+@media(max-width:499px)
+
+{
+    .container5 .main-content
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 40px;
+    color: grey;
+}
+.container5 footer
+{
+    width: 100%;
+    background-color: #26272b;
+    opacity: .8;
+}
+.container5 .sec-1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 10px;
+}
+.container5 .about
+{
+    width: 100%;
+}
+.container5 .sec-1 h2{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: whitesmoke;
+    margin-top: 20px;
+}
+.container5 .about p{
+    text-align: justify;
+    color: grey;
+    line-height: 24px;
+    margin-top: 10px;
+}
+.container5 .sec-1 ul{
+    list-style: none;
+}
+.container5 hr
+{
+    text-shadow: none;
+    opacity: .2;
+    
+}
+.container5 .sec-1 ul li
+{
+    padding: 5px;
+}
+.container5 a{
+    text-decoration: none;
+    color: gray;
+}
+.container5 a:hover{
+    color: rgb(221, 18, 214);
+}
+.container5 span{
+    color: grey;
+}
+.container5 i{
+    color: grey;
+    font-size: 15px;
+}
+.container5 .sec-2 
+{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+.container5 .sec-2 p{
+    color: grey;
+    font-size: 24px;
+    padding: 0;
+}
+.container5 .sec-2 a
+{
+    display: inline-block;
+    padding: 10px 25px;
+    background-color:red;
+    color: white;
+    margin-left:10px ;
+    border-radius: 15px;
+    font-size: 18px;
+}
+.container5 .sec-2 a:hover
+{
+    background-color: orange;
+    color: black;
+}
+.container5 .sec-3
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+}
+.container5 .sec-3 ul
+{
+    list-style: none;
+    margin: 20px;
+}
+.container5 .sec-3 ul li{
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    padding: 6px;
+    background-color: #424242;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.container5 .sec-3 ul li i{
+    color: white;
+    font-size: 24px;
+    line-break: 20px;
+    text-align: center;
+}
+.container5 .sec-3 ul li:nth-child(1):hover
+{
+    background-color: #3b5999;
+}
+.container5 .sec-3 ul li:nth-child(2):hover
+{
+    background-color: #55acee;
+}
+.container5 .sec-3 ul li:nth-child(3):hover
+{
+    background-color: #dd4b39;
+}
+.container5 .sec-3 ul li:nth-child(4):hover
+{
+    background-color: #0077B5;
+}
+
+.container5 .sec-3 ul li:nth-child(5):hover
+{
+    background-color: #ea4c89;
+}
+.container5 .sec-4 
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    padding: 30px;
+}
+.container5 .sec-4 p{
+    color: gray;
+    position: relative;
+}
+.container5 .sec-4 p::after
+{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    background-color: yellow;
+    transition: all .3s;
+}
+.container5 .sec-4 p:hover::after{
+    width: 100%;
+}
+}
