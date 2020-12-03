@@ -1,0 +1,139 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+        {
+            background-color: rgb(8, 6, 27);
+        }
+.box-shadow{
+    background-color: #000;
+ } 
+ .card img{
+    height: 250px;
+ } 
+ .card
+ {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+ }
+
+.heading
+{
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px wheat;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: cursive;
+    font-variant: small-caps;
+}
+.card-title
+{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    letter-spacing: 1.2px;
+    -webkit-text-stroke: 0.3px red;
+}
+.btn
+{
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.btn90
+{
+    float: right;
+    margin-right: 20px;
+    margin-left: 0;
+}
+.card-text
+{
+    text-align: justify;
+    color: white;
+}
+.box:hover .box-shadow
+{
+    border: 2px solid red;
+}
+@media(max-width:1024px)
+{
+    .btn{
+        margin-left: 50px;
+        margin-right: 10px;
+        width: max-content;
+    }
+    .btn90{
+        float: none;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-left: 65px;
+    }
+}
+@media(max-width:850px)
+{
+    .btn{
+        margin-left: 20px;
+        margin-right: 20px;
+        width: max-content;
+    }
+    .btn90{
+        float: none;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+}
+@media(max-width:680px)
+{
+    .btn{
+        margin-left: 0px;
+        margin-right: 0px;
+        width: max-content;
+        font-size: 15px;
+    }
+    .btn90{
+        float: none;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 15px;
+    }
+}
+@media(max-width:650px)
+{
+    .btn{
+        margin-left: 0px;
+        margin-right: 0px;
+        width: max-content;
+        font-size: 15px;
+    }
+    .btn90
+{
+    font-size: 15px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+}
+
+@media(max-width:570px)
+{
+    .btn90
+{
+    float: right;
+    margin-right: 20px;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+}
