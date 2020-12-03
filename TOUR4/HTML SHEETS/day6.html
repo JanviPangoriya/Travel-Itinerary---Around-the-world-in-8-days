@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day 6-Welcome to Venice</title>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+	<link rel="stylesheet" type="text/css" href="../CSS SHEETS/day6.css">
+</head>
+<body>
+	
+		<header>
+        <div class="container">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: black; height:92px;">
+                <a class="navbar-brand" href="#" style="color: white;">Travel Itinerary</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: grey;margin-right: 10px;color: black;">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Home </a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Escape To</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Stay</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Book Now</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                      </li>
+                      
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    </header>
+		
+
+		<div id="banner">
+			<img src="../IMAGES/Venice/venice0.JPG" id="banner_img" onload="typeWriter()">
+			<h2 id="banner_text" style="" ></h2>
+			<script type="text/javascript">
+				var i = 0;
+				var txt = 'Venice';
+				var speed = 350;
+
+				function typeWriter() {
+  					if (i < txt.length) {
+   					 	document.getElementById("banner_text").innerHTML += txt.charAt(i);
+    					i++;
+    					setTimeout(typeWriter, speed);
+  					}
+				}
+			</script>
+		</div >
+
+		<div id="places_to_visit" style="background-color: #0b032d;">
+			<h2 id="places_to_visit_text">Exclusive Excursion of the City</h2>
+			
+		    <div class="image-gallery">
+          		<a href="../IMAGES/Venice/venice1.JPG" class="img1"> 
+            		<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+            	</a>
+
+            	<a href="../IMAGES/Venice/venice2.JPG" class="img2">
+              		<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+              	</a>
+              	<a href="../IMAGES/Venice/venice3.JPG" class="img3">
+                	<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+                <a href="../IMAGES/Venice/venice4.JPG" class="img4">
+                  	<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+                <a href="../IMAGES/Venice/venice5.JPG" class="img5">
+                    <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+                <a href="../IMAGES/Venice/venice6.JPG" class="img6">
+                      <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+                <a href="../IMAGES/Venice/venice7.JPG" class="img7">
+                        <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+                <a href="../IMAGES/Venice/venice8.JPG" class="img8">
+                          <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+        </div>
+
+		</div>
+
+		<div id="events">
+			<h1 id="event_header">Events And Festivals</h1>
+			<p id="event_text_intro">Home to such culture-defining experiences as the Carnevale and the Venice Biennale, it is no surprise that the best events in Venice draw approximately 30 million visiors to la Serenissima.With savvy planning, travellers can experience the city in full pageantry through a dizzying array of world-class things to do, festivals and events; Venetians revel in banding together to honor the city’s rich traditions as well as creating colourful new occasions to celebrate life on the lagoon. </p>
+			<div class="left">
+			<h3>Venice Biennale</h3>
+			<p>At the forefront of everyone's Venetian Venice Biennale: the International Art Exhibition, which happens every two years   </p>
+			<p>With an event for nearly every imaginable occurrence, from honoring saints to spotlighting hotshot film makers, Venice proudly shares its unique culture with travellers seeking immersion beyond just the top museums and renowned restaurants.   </p>
+		    </br></br>
+			</div>
+			<img src="../IMAGES/Venice/events1.JPG" class="spring"style="">
+
+			<div class="right">
+				</br></br></br>
+			<h3>Vogalonga</h3>
+			<p>Often described as a celebration of “oar over engine,” for more than forty years, this spring-time event has raised awareness about adverse impacts of motor traffic to the Venetian lagoon. What began as a protest has blossomed into one of Venice’s most unique and beloved festivities, bringing together nearly 7,000 rowers in over 1,700 non-motorised boats of every size and shape. Boats set off from the Doge’s Palace to row a 30-kilometer circuit through the lagoon with cheering crowds lining canals and bridges nearly every paddle along the way.  </p></br></br></br></br>
+			</div>
+			<img src="../IMAGES/Venice/events2.JPG" class="summer"style="">
+
+			<div class="left">
+				</br></br>
+			<h3>Venice Carnival</h3>
+			<p>For two weeks leading to Shrove Tuesday, the city is aglow with pageantry and spectacle of Carnival. Many events centre on St. Mark’s Square, such as the highly-anticipated “Flight of the Angel” which sends a young beauty flying overhead via zip line, but celebration can be found in every neighbourhood and nook. Colourful parades on water and land, regatta boat races, kids’ fairs and free live performances keep the city abuzz, especially during weekends; but the ultimate Carnivale experience is attending a masquerade ball.</p>
+			</br></br>
+			</div>
+			<img src="../IMAGES/Venice/events3.JPG" class="autumn1"style="">
+			<img src="../IMAGES/Venice/events4.JPG" class="autumn2"style="">
+
+			<div class="right">
+				</br></br>
+			<h3 style="padding-left: 25px;">Veneto Jazz</h3>
+			<p style="padding: 25px;">The ambitious Veneto Jazz organization programs live performances and events throughout Italy’s Veneto region during two annual sessions, winter from January through April and summer, from June through August. Events include a Venice-centric Jazz Festival in July as well as concerts staged in famed Venetian villas along the Brenta Riviera, including Villa Pisani in Stra.</p>
+			</div>
+			<img src="../IMAGES/Venice/events5.JPG" class="winter1"style="">
+			<img src="../IMAGES/Venice/events6.JPG" class="winter2"style="">
+		</div>
+
+		<div id="lifestyle">
+			<h1 id="lifestyle_header">Lifestyle and Fun</h1>
+			<div class="box" id="first">
+				<img src="../IMAGES/Venice/flash1.JPG">
+				<h4>Teatro la Fenice</h4>
+				<p>This grand opera house–the Phoenix,in English–was once the setting for premieres by the likes of Verdi, Bellini and Rossini.You can spend an evening at the Teatro la Fenice enjoying all kinds of performances ranging from opera and orchestral works to dance and ballet.  </p>
+				<a href="https://www.teatrolafenice.it/">Know More</a>
+			</div>
+
+			<div class="box" id="second">
+				<img src="../IMAGES/Venice/flash2.JPG">
+				<h4>Casino di Venezia</h4>
+				<p>A refined evening of Casino Royale fun at the Casino di Venezia,you’ll find at the Ca’ Vendramin Calergi, a historic palace right on the Grand Canal in the Cannaregio quarter.It’s the world’s oldest casino and housed in luxurious surroundings.</p>
+				<a href="https://www.casinovenezia.it/en">Know More</a>
+			</div>
+
+			<div class="box" id="third">
+				<img src="../IMAGES/Venice/flash3.JPG">
+				<h4>Venice Jazz Club</h4>
+				<p>A sophisticated concert at the Venice Jazz Club is the perfect way to while away an evening in Venice. An in-house quartet, often joined by guest performers, reimagines modern tunes alongside the classics, it’s well worth a visit.</p>
+				<a href="https://venicejazzclub.weebly.com/">Know More</a>
+			</div>
+		</div>
+
+
+		<div id="footer">
+			<h2 id="contact_text">Contact Us</h2>
+			<div id="about">
+				<h3>About Us</h3>
+				<p>
+					Crave for wanderlust? Welcome to Travel Iternary! We travel not to escape life but for life not to escape us. If you are young enough to learn to be better, we urge you to travel as far and as widely as possible. Step out of floors. Find out the way how other people live and enjoy life. Look at the unnamed wonders of the world. Live, travel, adventure, bless and don't be sorry. The world is a book and people who don't travel read only a single page. So wake up, make memories, find you way!Each of us have wings. All you have to do is FLY!
+				</p>
+			</div>
+			<div id="services">
+				<h3>Services</h3>
+				<ul>
+					<li><a>Attractions</a></li>
+					<li><a>Food</a></li>
+					<li><a>Accomodation</a></li>
+					<li><a>Book a Tour</a></li>
+					<li><a>Events</a></li>
+					<li><a>Life Style</a></li>
+				</ul>
+			</div>
+
+			<div id="links">
+				<h3>Quick Links</h3>
+				<ul>
+					<li><a>About Us</a></li>
+					<li><a>Contribute</a></li>
+					<li><a>Privacy Policy</a></li>
+					<li><a>Site Maps</a></li>
+					<li><a>Disclaimer</a></li>
+					
+				</ul>
+			</div>
+
+			<div id="contact">
+				<h3>Contact</h3>
+                <ul>
+                    <li><i class="fa fa-home"></i><span>Mathura,Uttar Pradesh</span></li>
+                    <li><i class="fa fa-envelope"></i><span> travel.itinerary.@gmail.com</span></li>
+                    <li><i class="fa fa-phone-square"></i><span>+91 7896541230</span></li>
+                    <li><i class="fa fa-facebook-official"></i><span>GLA University</span></li>
+                </ul>
+            </div>
+</body>
+</html>
