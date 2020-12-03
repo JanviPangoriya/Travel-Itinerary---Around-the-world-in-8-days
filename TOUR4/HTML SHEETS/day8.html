@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day 8-Welcome to Rome</title>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+	<link rel="stylesheet" type="text/css" href="../CSS SHEETS/day8.css">
+</head>
+<body>
+	
+		<header>
+        <div class="container">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: black; height:92px;">
+                <a class="navbar-brand" href="#" style="color: white;">Travel Itinerary</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: grey;margin-right: 10px;color: black;">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Home </a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Escape To</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Stay</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Book Now</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                      </li>
+                      
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    </header>
+		
+
+		<div id="banner">
+			<img src="../IMAGES/Rome/rome0.JPG" id="banner_img" onload="typeWriter()">
+			<h2 id="banner_text" style="" ></h2>
+			<script type="text/javascript">
+				var i = 0;
+				var txt = 'Rome';
+				var speed = 350;
+
+				function typeWriter() {
+  					if (i < txt.length) {
+   					 	document.getElementById("banner_text").innerHTML += txt.charAt(i);
+    					i++;
+    					setTimeout(typeWriter, speed);
+  					}
+				}
+			</script>
+		</div >
+
+		<div id="places_to_visit" style="background-color: #0b032d;">
+			<h2 id="places_to_visit_text">Exclusive Excursion of the City</h2>
+			
+		    <div class="image-gallery">
+          		<a href="../IMAGES/Rome/rome1.JPG" class="img1"> 
+            		<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+            	</a>
+
+            	<a href="../IMAGES/Rome/rome2.JPG" class="img2">
+              		<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+              	</a>
+              	<a href="../IMAGES/Rome/rome3.JPG" class="img3">
+                	<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+                <a href="../IMAGES/Rome/rome4.JPG" class="img4">
+                  	<i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+                <a href="../IMAGES/Rome/rome5.JPG" class="img5">
+                    <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+                <a href="../IMAGES/Rome/rome6.JPG" class="img6">
+                      <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+                <a href="../IMAGES/Rome/rome7.JPG" class="img7">
+                        <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+                <a href="../IMAGES/Rome/rome8.JPG" class="img8">
+                          <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </a>
+        </div>
+
+		</div>
+
+		<div id="events">
+			<h1 id="event_header">Events And Festivals</h1>
+			<p id="event_text_intro">Although the capital of Italy is known for its delicious restaurants, beautiful architecture, stellar beaches and a brilliant shopping scene, the best events in Rome are exciting happenings worth travelling to Europe all on their own for. Bringing tourists and locals out together into town piazzas, gardens and cultural venues, these annual festivities function as deep-dives into a slice of culture that, usually, only Romans get to experience. </p>
+			<div class="left">
+			<h3>Taste of Roma</h3>
+			<p>If you’re in town at the end of September, Taste of Roma should be on your to-do list. This enormous food festival is a great way to eat your way through the city and sample the cuisines of Rome’s best chefs and emerging food personalities. </p>
+			<p> </p>
+		    </br></br>
+			</div>
+			<img src="../IMAGES/Rome/events1.JPG" class="spring"style="">
+
+			<div class="right">
+				</br></br></br>
+			<h3>The Ides of March</h3>
+			<p>The Ides of March, Rome marks the anniversary of Julius Caesar’s untimely death with a period reenactment. Caesar was one of Rome's most important dictators and he was murdered by his own senators.This unique event sees dozens of actors and actresses dress up in Roman togas and engage in animated discussions before dealing Julius Caesar the final blow.</p></br></br></br></br>
+			</div>
+			<img src="../IMAGES/Rome/events2.JPG" class="summer"style="">
+
+			<div class="left">
+				</br></br>
+			<h3>Vino Forum</h3>
+			<p>When in Rome, you can’t miss the chance to taste all the wines, and a great place to do just that is at VinòForum, a wine festival held in the north of Rome each June.feature over 2,500 wines from 500 producers, along with pop-up restaurants serving gourmet foods prepared by Michelin-starred chefs. You can also sign up for master classes and guided wine tastings at the VinoForum Academy.</p>
+			</br></br>
+			</div>
+			<img src="../IMAGES/Rome/events3.JPG" class="autumn1"style="">
+			<img src="../IMAGES/Rome/events4.JPG" class="autumn2"style="">
+
+			<div class="right">
+				</br></br>
+			<h3 style="padding-left: 25px;">Citta della Pizza</h3>
+			<p style="padding: 25px;">The best Italian pizzaioli (pizza makers) gather in Rome annually to celebrate one of the country’s most beloved foods. Expect to devour all sorts of variations on the classic, from the fluffy Neapolitan pie to the thin Roman-crust one, fried pizza and pizza by the slice.</p>
+			</div>
+			<img src="../IMAGES/Rome/events5.JPG" class="winter1"style="">
+			<img src="../IMAGES/Rome/events6.JPG" class="winter2"style="">
+		</div>
+
+		<div id="lifestyle">
+			<h1 id="lifestyle_header">Lifestyle and Fun</h1>
+			<div class="box" id="first">
+				<img src="../IMAGES/Rome/flash1.JPG">
+				<h4>St Peters Dome</h4>
+				<p> From the far end of this long hilltop road, the dome appears large and imposing, but as you walk towards the dome you’ll begin to see the optical illusion. The nearer you get, the smaller the dome appears to the point where it looks tiny.</p>
+				<a href="">Know More</a>
+			</div>
+
+			<div class="box" id="second">
+				<img src="../IMAGES/Rome/flash2.JPG">
+				<h4>Vatican Museum</h4>
+				<p>The Vatican museum is an art and sculpture museum in Vatican City The Vatican museum is too big and has lavishly decorated halls and galleries. Explore the museum with a picture gallery and sculptures.</p>
+				<a href="https://www.thrillophilia.com/tours/vatican-museum-the-sistine-chapel-entry-ticket">Know More</a>
+			</div>
+
+			<div class="box" id="third">
+				<img src="../IMAGES/Rome/flash3.JPG">
+				<h4>Monsters Park</h4>
+				<p>An enormous, life-size panorama, known as THE WALL, to recreate life on both sides of the notorious Berlin Wall, which divided the city for almost 30 years, on an imaginary autumn day.Seen from atop a 13-foot and learn about life in the shadow of the Wall at a photo exhibition too.</p>
+				<a href="https://www.thrillophilia.com/tours">Know More</a>
+			</div>
+		</div>
+
+
+		<div id="footer">
+			<h2 id="contact_text">Contact Us</h2>
+			<div id="about">
+				<h3>About Us</h3>
+				<p>
+					Crave for wanderlust? Welcome to Travel Iternary! We travel not to escape life but for life not to escape us. If you are young enough to learn to be better, we urge you to travel as far and as widely as possible. Step out of floors. Find out the way how other people live and enjoy life. Look at the unnamed wonders of the world. Live, travel, adventure, bless and don't be sorry. The world is a book and people who don't travel read only a single page. So wake up, make memories, find you way!Each of us have wings. All you have to do is FLY!
+				</p>
+			</div>
+			<div id="services">
+				<h3>Services</h3>
+				<ul>
+					<li><a>Attractions</a></li>
+					<li><a>Food</a></li>
+					<li><a>Accomodation</a></li>
+					<li><a>Book a Tour</a></li>
+					<li><a>Events</a></li>
+					<li><a>Life Style</a></li>
+				</ul>
+			</div>
+
+			<div id="links">
+				<h3>Quick Links</h3>
+				<ul>
+					<li><a>About Us</a></li>
+					<li><a>Contribute</a></li>
+					<li><a>Privacy Policy</a></li>
+					<li><a>Site Maps</a></li>
+					<li><a>Disclaimer</a></li>
+					
+				</ul>
+			</div>
+
+			<div id="contact">
+				<h3>Contact</h3>
+                <ul>
+                    <li><i class="fa fa-home"></i><span>Mathura,Uttar Pradesh</span></li>
+                    <li><i class="fa fa-envelope"></i><span> travel.itinerary.@gmail.com</span></li>
+                    <li><i class="fa fa-phone-square"></i><span>+91 7896541230</span></li>
+                    <li><i class="fa fa-facebook-official"></i><span>GLA University</span></li>
+                </ul>
+            </div>
+</body>
+</html>
