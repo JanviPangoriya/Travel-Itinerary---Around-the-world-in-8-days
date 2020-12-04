@@ -1026,11 +1026,11 @@
 		}
 		@media(min-width:600px) and (max-width:900px){
 			#places_to_visit{
-				height:3000px;
+				height:1500px;
 			}
 		}
 		@media(max-width: 600px){
 			#places_to_visit{
-				height:4500px;
+				height:3030px;
 			}
 		}
