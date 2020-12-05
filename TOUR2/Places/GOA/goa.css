@@ -167,7 +167,7 @@
 .img1
 {
     grid-area: img1;
-    background-image: url("");
+    background-image: url("Image/goa1.jpeg");
     min-height: 51.5rem;
 
 }
@@ -195,7 +195,7 @@
 {
     grid-area: img6;
     min-height: 51.5rem;
-    background-image: url("");
+    background-image: url("Image/goa6.jpeg");
 
 }
 .img7
@@ -206,7 +206,7 @@
 .img8
 {
     grid-area: img8;
-    background-image: url("");
+    background-image: url("Image/goa8.jpeg");
 }
 @media (max-width:900px)
 {
