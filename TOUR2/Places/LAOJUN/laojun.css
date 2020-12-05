@@ -167,46 +167,46 @@ opacity: 1;
 .img1
 {
 grid-area: img1;
-background-image: url("Image/img1.jpeg");
+background-image: url("Image/p1.jpeg");
 min-height: 51.5rem;
 
 }
 .img2
 {
 grid-area: img2;
-background-image: url("Image/img2.jpeg");
+background-image: url("Image/p2.jpeg");
 }
 .img3
 {
 grid-area: img3;
-background-image: url("Image/img3.jpeg");
+background-image: url("Image/p3.jpeg");
 }
 .img4
 {
 grid-area: img4;
-background-image: url("Image/card2.jpeg");
+background-image: url("Image/p4.jpg");
 }
 .img5
 {
 grid-area: img5;
-background-image: url("Image/card3.jpeg");
+background-image: url("Image/p5.jpg");
 }
 .img6
 {
 grid-area: img6;
 min-height: 51.5rem;
-background-image: url("Image/img6.jpeg");
+background-image: url("Image/p6.jpg");
 
 }
 .img7
 {
 grid-area: img7;
-background-image: url("Image/event2.jpeg");
+background-image: url("Image/p7.jpg");
 }
 .img8
 {
 grid-area: img8;
-background-image: url("Image/img8.jpeg");
+background-image: url("Image/p8.jpg");
 }
 @media (max-width:900px)
 {
