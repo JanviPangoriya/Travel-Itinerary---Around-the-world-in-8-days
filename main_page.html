@@ -7,161 +7,23 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-  <style type="text/css">
-    *{
-      margin:0px;
-      padding: 0px;
-      box-sizing: border-box;
-     }
-    .topnav {
-       overflow: hidden;
-       background-color: #000033;
-     }
-
-    .topnav a {
-      float: left;
-      display: block;
-      color: #66ccff;
-      text-align: center;
-      padding: 16px 25px;
-      text-decoration: none;
-      font-size: 25px;
-      font-family: 'Kaushan Script', cursive;
-    }
-
-    .topnav a:hover {
-      
-      color: yellow;
-    }
-
-    .topnav a.active {
-      background-color: #000033;
-      color: white;
-    }
-
-    .topnav .icon {
-      display: none;
-    }
-
-    @media screen and (max-width: 600px) {
-      .topnav a:not(:first-child) {display: none;}
-      .topnav a.icon {
-        float: right;
-        display: block;
-      }
-    }
-
-    @media screen and (max-width: 600px) {
-      .topnav.responsive {position: relative;}
-      .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-        
-      }
-      .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: center;
-        background-color: black;
-       
-       
-      }
-      .topnav.responsive a:hover{
-        background-color: grey;
-        color: black;
-      }
-    }
-     body{
-      background-color: black;
-     }
-     .call-outs {
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  flex-shrink: 1;
-  justify-content: center;
-  margin-top: 25px;
-}
-
-.call-out {
-  position: relative;
-  margin: .5em;
-  width: 100%;
-  max-width: 300px;
-  text-align: center;
-  border-radius: 50%;
-  overflow: hidden;
-  border:solid 5px blue;
-  padding: 7px;
-}
-
-/* display .call-out as 1:1 ratio */
-.call-out:before {
-  display: block;
-  content: '';
-  margin-top: 100%;
-}
-
-.link {
-  background-color: rgba(0,0,0,.8);
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.link a {
-  position: absolute;
-  top: 70%;
-  left: 0;
-  right: 0;
-  color: #FFF;
-  padding: .5em 0;
-}
-
-.link a:visited,
-.link a:active,
-.link a:hover {
-  color: #FFF;
-}
-
-@media screen and (min-width: 700px) {
-  .call-out {
-    width: 47%;
-    margin: .5em 1em;
-  }
-}
-
-@media screen and (min-width: 960px) {
-  .call-outs {
-    justify-content: space-between;
-  }
-  .call-out {
-    width: 23.5%;
-    margin: 0;
-  }
-}
-
-  </style>
-
+<link rel="stylesheet" href="CSS/main_page.css">
 </head>
 <body>
 <div class="topnav" id="myTopnav">
-  <a href="#home" class="active">TRAVEL ITINERARY</a>
-  <a href="#news"></a>
-  <a href="#contact">Log In</a>
-  <a href="#about">Sign Up</a>
-  <a href="#about">About Us</a>
+  <a href="#" class="active">TRAVEL ITINERARY</a>
+  <a href="login.html">Log In</a>
+  <a href="sign-up_page.html">Sign Up</a>
+  <a href="TOUR1/Html/team.html">About Us</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
 </div>
 
-<div class="container" style="">
+<div class="container">
   <h2></h2>  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -205,28 +67,109 @@
 
 <div class="call-outs">
   <div class="call-out one">
-    <div class="link" style="background-image: url('');">
-      <a href="">Tour I</a>
+    <div class="link" style="background-image: url('IMAGES/image5.jpg'); background-repeat: no-repeat; background-size: cover;">
+      <a href="TOUR1/landing page/html/landingpage.html" style="font-size: 20px; font-weight: 500;color: white; background-color: gray;">Tour I</a>
     </div><!-- .call-out .link -->
   </div><!-- .call-out -->
 
   <div class="call-out two">
-    <div class="link" style="background-image: url('');">
-      <a href="">Tour II</a>
+    <div class="link" style="background-image: url('IMAGES/image6.jpg'); background-repeat: no-repeat; background-size: cover;">
+      <a href="TOUR2/index.html" style="font-size: 20px; font-weight: 500;color: white; background-color: gray;">Tour II</a>
     </div><!-- .call-out .link -->
   </div><!-- .call-out -->
 
   <div class="call-out three">
-    <div class="link" style="background-image: url('');">
-      <a href="">Tour III</a>
+    <div class="link" style="background-image: url('IMAGES/image4.JPG'); background-repeat: no-repeat; background-size: cover;">
+      <a href="TOUR3/index.html" style="font-size: 20px; font-weight: 500;color: white; background-color: gray;">Tour III</a>
     </div><!-- .call-out .link -->
   </div><!-- .call-out -->
 
   <div class="call-out four">
-    <div class="link" style="background-image: url('');">
-      <a href="">Tour IV</a>
+    <div class="link" style="background-image: url('TOUR4/IMAGES/landing_page/amsterdam.JPG');">
+      <a href="TOUR4/splash_screen.html" style="font-size: 20px; font-weight: 500;color: white; background-color: gray;">Tour IV</a>
     </div><!-- .call-out .link -->
   </div><!-- .call-out -->
 </div><!-- .call-outs -->
+<div class="container" style="margin-left: 25px; margin-right: 0; width: 98vw;">
+  <div class="box1" style=" width:300px; height:300px;border: 2px solid white; background-color: rgb(9, 9, 37);float: left;margin-right: 15px;;margin-top: 20px;">
+    <h1 style="text-align: center; text-transform: uppercase; font-weight: bolder;color: aqua;"> TOUR-1</h1>
+    <p style="text-align: justify; font-size: 18px;font-weight: 400;color: white;margin-left: 5px;margin-right: 5px;padding-right: 5px;padding-left: 5px;">The tour will be the recommended for holiday makers. It is also the most expensive tour and the approximate expenditure for this is Rs. 12 Lakhs to 15 lakhs </p>
+  </div>
+  <div class="box1" style=" width:300px; height: 300px;border: 2px solid white; background-color: rgb(9, 9, 37);float: left;margin-right: 20px; margin-top: 20px;">
+    <h1 style="text-align: center; text-transform: uppercase; font-weight: bolder;color: aqua;"> TOUR-2</h1>
+    <p style="text-align: justify; font-size: 18px;font-weight: 400;color: white;margin-left: 5px;margin-right: 5px;padding-right: 5px;padding-left: 5px;">The tour will be the recommended for photographers. It is also the most interesting tour and the approximate expenditure for this is Rs. 10 Lakhs to 12 lakhs </p>
+  </div>
+  <div class="box1" style=" width:300px; height: 300px;border: 2px solid white; background-color: rgb(9, 9, 37);float: left;margin-right:20px; margin-top: 20px;">
+    <h1 style="text-align: center; text-transform: uppercase; font-weight: bolder;color: aqua;"> TOUR-3</h1>
+    <p style="text-align: justify; font-size: 18px;font-weight: 400;color: white;margin-left: 5px;margin-right: 5px;padding-right: 5px;padding-left: 5px;">The tour will be the recommended for  backpackers and Adventure Travellers. It is fantastic tour and the approximate expenditure for this is Rs. 11 Lakhs to 13 lakhs </p>
+  </div>
+  <div class="box1" style=" width:300px; height: 300px;border: 2px solid white; background-color:rgb(9, 9, 37);float: left;margin-top: 20px;">
+    <h1 style="text-align: center; text-transform: uppercase; font-weight: bolder;color: aqua;"> TOUR-4</h1>
+    <p style="text-align: justify; font-size: 18px;font-weight: 400;color: white;margin-right: 5px;margin-right: 0px;padding-right: 5px;padding-left: 5px;">This tour will be for people who want break from the life and are not passionate about exploring new sights but are definitely party goers.The approximate expenditure for this is Rs. 8 Lakhs to 10 lakhs </p>
+  </div>
+</div>
+
+<div class="container5">
+  <section class="main-content">
+    <h1>Contact</h1>
+  </section>
+  <footer>
+      <section class="sec-1">
+          <section class="about">
+              <h2>
+                  About
+              </h2>
+              <p>Crave for wanderlust? Welcome to Travel Iternary! We travel not to escape life but for life not to escape us. If you are young enough to learn to be better, we urge you to travel as far and as widely as possible. Step out of floors. Find out the way how other people live and enjoy life. Look at the unnamed wonders of the world. Live, travel, adventure, bless and don't be sorry. The world is a book and people who don't travel read only a single page. So wake up, make memories, find you way!
+Each of us have wings. All you have to do is FLY!</p>
+          </section>
+          <section class="link1">
+              <h2>Services</h2>
+              <ul>
+                  <li><a href="#">Attraction</a></li>
+                  <li><a href="#">Food</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Accommodation</a></li>
+                  <li><a href="#">Book a tour</a></li>
+                  <li><a href="#">Life Style</a></li>
+              </ul>
+          </section>
+          <section class="link2">
+              <h2>Quick Links</h2>
+              <ul>
+                  <li><a href="TOUR1/Html/team.html">About Us</a></li>
+                  <li><a href="#">Contribute</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="https://google.com/maps">Site Maps</a></li>
+                  <li><a href="#">Disclaimer</a></li>
+              </ul>
+          </section>
+          <section class="link3">
+              <h2>Contact</h2>
+              <ul>
+                  <li><i class="fa fa-home"></i><span>Mathura,Uttar Pradesh</span></li>
+                  <li><i class="fa fa-envelope"></i><span> travel.itinerary.@gmail.com</span></li>
+                  <li><i class="fa fa-phone-square"></i><span>+91 7896541230</span></li>
+                  <li><i class="fa fa-facebook-official"></i><span>GLA University</span></li>
+              </ul>
+          </section>
+      </section>
+      <section class="sec-2">
+          <p>Contact Us</p>
+      </section>
+      <section class="sec-3">
+          <ul>
+            <li><a href="https://www.instagram.com/_travel_itinerary_/"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="mailto:itinerarytravel2001@gmail.com"><i class="fa fa-google"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+          </ul>
+      </section>
+      <section class="sec-4">
+          <p style="font-weight: bolder; text-transform: uppercase;"><span style="font-size: 40px;">&copy;<b>Travel Itinerary</b> 2020</span></p>
+      </section>
+  </footer>
+  </div>
+<script src="JAVASCRIPT/main_page.js"></script>
 </body>
 </html>
