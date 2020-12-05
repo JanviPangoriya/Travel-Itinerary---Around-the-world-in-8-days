@@ -167,46 +167,46 @@ opacity: 1;
 .img1
 {
 grid-area: img1;
-background-image: url("");
+background-image: url("Image/p1.jpg");
 min-height: 51.5rem;
 
 }
 .img2
 {
 grid-area: img2;
-background-image: url("Image/goa3.jpeg");
+background-image: url("Image/p2.jpg");
 }
 .img3
 {
 grid-area: img3;
-background-image: url("Image/goa2.jpeg");
+background-image: url("Image/p3.jpg");
 }
 .img4
 {
 grid-area: img4;
-background-image: url("Image/goa4.jpeg");
+background-image: url("Image/p4.jpg");
 }
 .img5
 {
 grid-area: img5;
-background-image: url("Image/goa5.jpeg");
+background-image: url("Image/p5.jpg");
 }
 .img6
 {
 grid-area: img6;
 min-height: 51.5rem;
-background-image: url("");
+background-image: url("Image/p6.jpg");
 
 }
 .img7
 {
 grid-area: img7;
-background-image: url("Image/goa7.jpeg");
+background-image: url("Image/p7.jpg");
 }
 .img8
 {
 grid-area: img8;
-background-image: url("");
+background-image: url("Image/p8.jpg");
 }
 @media (max-width:900px)
 {
