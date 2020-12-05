@@ -1,0 +1,737 @@
+  
+	*{
+        margin:0;
+        padding:0 ;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: black;
+    }
+    /*#nav-bar{
+        width: 100%;
+        height:75px;
+        z-index: 99;
+        position: fixed;
+        top:0;
+        left:0;
+        background-color: black;
+    }
+    #nav-bar h2{
+        line-height: 75px;
+        color: white;
+        font-family:'Kaushan Script', cursive; 
+        float: left;
+        margin-left: 20px;
+    }
+    #nav-bar ol{
+        list-style: none;
+         float: right;
+    }*/
+    header
+{
+position: absolute;
+z-index: 10;
+width: 100%;
+}
+.navbar
+{
+padding: 20px 0;
+}
+.navbar-brand
+{
+font-weight: 800;
+text-transform: uppercase;
+font-size: 1.8em;
+margin-left: 10px;
+}
+.nav-item
+{
+font-weight: 800;
+
+padding: 5px;
+}
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item.active .nav-link
+{
+
+color:yellow;
+}
+.navbar-light .navbar-toggler
+{
+border: none;
+color: white;
+border: 2px solid #7f7f7f;
+border-radius: 0;
+outline: none;
+}
+.navbar-collapse
+{
+background-color: black;
+}
+.navbar-light .navbar-nav .nav-item .nav-link
+{
+color: white;
+padding: 5px;
+}
+    #banner{
+        width:100%;
+        height:780px;
+        overflow: hidden;
+    }
+    #banner_img{
+        width: 100%;
+        height:100vh;
+        position: absolute;
+    }
+    #banner_text{
+        color: black;
+        font-size: 4rem;
+        background-color: grey;
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 450px;
+        margin-left: 35%;
+        opacity: .9;
+        z-index: 0;
+        font-family: 'Kaushan Script', cursive; 
+        position: relative;
+
+    }
+    #places_to_visit{
+        width: 100%;
+        height:1500px;
+    }
+    #places_to_visit_text{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        color: white;
+        font-size: 3rem;
+        padding: 20px;
+        font-family: 'Kaushan Script', cursive; 
+    }
+   .image-gallery
+{
+margin-top: 20px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: auto;
+grid-gap: 1.5rem;
+grid-template-areas: 
+        'img1 img2 img3 img3'
+        'img1 img4 img5 img6'
+        'img7 img7 img8 img6';
+}
+.image-gallery a{
+width: 100%;
+height: 25rem;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.image-gallery a i{
+color: rgba(255, 255, 255,.6);
+font-size: 3rem;
+position: relative;
+z-index: 100;
+padding: 1rem 3rem;
+border: 2px solid rgba(255, 255, 255,.6);
+border-radius: 0.4rem;
+opacity: 0;
+transition:opacity 0.5s;
+}
+.image-gallery a::before
+{
+content: '';
+position: absolute;
+width: 100%;
+top: 0;
+left: 0;
+opacity: 0;
+height: 100%;
+transition: opacity 0.5s;
+background-color: rgba(0,0,0,0.8);
+}
+.image-gallery a:hover i,
+.image-gallery a:hover::before
+{
+opacity: 1;
+}
+.img1
+{
+grid-area: img1;
+background-image: url("");
+min-height: 51.5rem;
+
+}
+.img2
+{
+grid-area: img2;
+background-image: url("Image/goa3.jpeg");
+}
+.img3
+{
+grid-area: img3;
+background-image: url("Image/goa2.jpeg");
+}
+.img4
+{
+grid-area: img4;
+background-image: url("Image/goa4.jpeg");
+}
+.img5
+{
+grid-area: img5;
+background-image: url("Image/goa5.jpeg");
+}
+.img6
+{
+grid-area: img6;
+min-height: 51.5rem;
+background-image: url("");
+
+}
+.img7
+{
+grid-area: img7;
+background-image: url("Image/goa7.jpeg");
+}
+.img8
+{
+grid-area: img8;
+background-image: url("");
+}
+@media (max-width:900px)
+{
+.image-gallery
+{
+    grid-template-areas: 
+    'img1 img1 img2 img2'
+    'img1 img1 img3 img3'
+    'img4 img4 img5 img5'
+
+    'img6 img7 img7 img7'
+    'img8 img8 img8 img8';    
+}
+.image-gallery a
+{
+    height: 20rem;
+}
+.img1{
+    min-height: 41.5rem;
+}
+.img6{
+   min-height: 20rem;
+}
+}
+@media (max-width:600px)
+{
+.image-gallery
+{
+   grid-template-areas: 
+   'img1 img1 img1 img1'
+   'img2 img2 img2 img2'
+   'img3 img3 img3 img3'
+   'img4 img4 img4 img4'
+   'img5 img5 img5 img5'
+   'img6 img6 img6 img6'
+   'img7 img7 img7 img7'
+   'img8 img8 img8 img8';    
+}
+.image-gallery a,.img1,.img6
+{
+   height: 20rem;
+   min-height: 20rem;
+}
+}
+   li{
+       float: left;
+       margin-left: 40px;
+       margin-right: 30px;
+   }
+   a{
+       line-height: 75px;
+       color: white;
+       font-family: 'Kaushan Script', cursive; 
+       font-size: 25px;
+   }
+   a:hover{
+       text-decoration: none;
+       color:yellow;
+   }
+   #events{
+       width: 100%;
+       height:1600px;
+       padding: 40px;
+       clear: both;
+   }
+   #event_header{
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       font-family: 'Kaushan Script',cursive;
+       background-color: black;
+       text-align: center;
+       color: white;
+       width: 400px;
+       padding: 30px;
+   }
+   #event_text_intro{
+       color: #9FA4C4;
+       text-align: justify;
+   }
+   #events p{
+       color:#B3E5FF;
+   }
+   #events h3{
+       color: darkgrey;
+       font-family: 'Kaushan Script',cursive;
+       text-decoration: underline;
+   }
+   #events .left{
+       float: left;
+       width:50%;
+       clear: right;
+   }
+   #events .right{
+       float: right;
+       width:50%;
+       clear: left;
+   }
+   #lifestyle{
+       width:100%;
+       height:700px;
+       background-color: #0b032d;
+   }
+   #lifestyle_header{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        color: white;
+        font-size: 3rem;
+        padding: 20px;
+        font-family: 'Kaushan Script', cursive; 
+    
+   }
+
+   .box{
+            width:25%;
+            height:530px;
+            background-color: black;
+            float: left;
+            margin-left: 50px;
+            margin-right: 40px;
+            display: block;
+            border-radius: 8px;
+            padding:20px;
+    }
+    .box h4{
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            font-family: 'Kaushan Script',cursive;
+    }
+    .box img{
+        width:100%;
+        height:50%;
+        margin-left: auto;
+        margin-right:auto;
+        border-radius: 5px;
+    }
+    .box p{
+        text-align: justify;
+        color: white
+    }
+    .box a{
+        background-color: red;
+        text-decoration: none;
+        color:white;
+        display: block;
+        text-align: center;
+        height: 55px;
+        line-height: 55px;
+    }
+    .box a:hover{
+        background-color: blue;
+    }
+    
+    #footer{
+        padding: 25px;
+    }
+    #contact_text{
+        text-align: center;
+        font-family: 'Kaushan Script',cursive;
+        color:white;
+        margin:30px;
+        font-size: 2rem;
+    }
+    #about{
+        width:40%;
+        justify-content: justify-content;
+        color: white;
+        float: left;
+    }
+    #about h3{
+        font-family: 'Kaushan Script';
+        color: white;
+    }
+    #services{
+        float: left;
+        width:20%;
+        color: white;
+        text-align: center;
+    }
+    #services h3{
+        font-family: 'Kaushan Script',cursive;
+
+    }
+    #links{
+        float: left;
+        width: 20%;
+        color: white;
+        text-align: center;
+    }
+    #links h3{
+        font-family: 'Kaushan Script',cursive;
+    }
+    #contact{
+        float:left;
+        width: 20%;
+        color: white;
+        text-align: center;
+    }
+    #contact h3{
+        font-family: 'Kaushan Script',cursive;
+    }
+    #footer ul{
+        list-style: none;
+    }
+    #footer ul li a{
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        text-decoration: none;
+    }
+    #services ul li{
+        height:25px;
+        font-size: 10px;
+    }
+    #links ul li{
+        height:25px;
+        font-size: 10px;
+    }
+    #events .spring{
+        float: right;height: 200px;width: 45%;
+    }
+    #events .summer{
+        float:left;height: 300px;width: 45%;
+    }
+    #events .autumn1{
+        float:left;height: 300px;width: 23%;
+    }
+    #events .autumn2{
+        float:right;height: 300px;width: 25%;
+    }
+    #events .winter1{
+        float:left;height: 300px;width: 22%;
+    }
+    #events .winter2{
+        float:right;height: 300px;width: 26%;
+    }
+    @media(min-width:900px) and (max-width: 1100px){
+        #events{
+            height:1810px;
+        }
+        #lifestyle{
+            padding:10px;
+            height:850px;
+        }
+        #lifestyle #third{
+            margin-left: 25px;
+            margin-right: 25px;
+            height: 560px;
+        }
+        #lifestyle #second{
+            margin-left: 25px;
+            margin-right: 25px;
+            height: 560px;
+        }
+        #lifestyle #first{
+            margin-left: 25px;
+            margin-right: 25px;
+            height: 560px;
+        }
+    }
+    @media(max-width:899px) and (min-width: 734px){
+        #events{
+            height:2600px;
+        }
+        #events .left{
+            float: none;
+            clear:none;
+            width: 100%;
+        }
+        #events .right{
+            float: none;
+            clear:none;
+            width: 100%;
+        }
+        #events .spring{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            float: none;
+        }
+        #events .summer{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            float: none;
+        }
+        #events .autumn1{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            width:45%;
+        }
+        #events .autumn2{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            float: none;
+            width:45%;
+        }
+        #events .winter1{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            width:45%;
+        }
+        #events .winter2{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            float: none;
+            width:45%;
+        }
+        #lifestyle{
+            padding:10px;
+        }
+        #lifestyle #third{
+            margin-top: 20px;
+            width:280px;
+            height: 600px;
+            margin-left: 30%;
+            
+            display: block;
+        }
+        #lifestyle #second{
+            width:250px;
+            height: 620px;
+            margin-right: 7%;
+        }
+        #lifestyle #first{
+            width:250px;
+            height: 620px;
+            margin-left: 7%;
+        }
+        #lifestyle{
+            height:1500px;
+        }
+        #about{
+            width:40%;
+        }
+        #services{
+            width:25%;
+        }
+        #links{
+            width:25%;
+        }
+        #contact{
+            width:100%;
+            margin-top: 40px;
+        }
+    }
+    
+    @media(max-width:734px) and (min-width: 514px){
+        #events{
+            height:2800px;
+            padding: 15px;
+        }
+        #events .left{
+            float: none;
+            clear:none;
+            width: 100%;
+        }
+        #events .right{
+            float: none;
+            clear:none;
+            width: 100%;
+        }
+        #events .spring{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            float: none;
+        }
+        #events .summer{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            float: none;
+        }
+        #events .autumn1{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            width:45%;
+        }
+        #events .autumn2{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            float: none;
+            width:45%;
+        }
+        #events .winter1{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            width:45%;
+        }
+        #events .winter2{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            float: none;
+            width:45%;
+        }
+        .box{
+            float:none;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width:70%;
+            margin-bottom: 20px;
+        }
+        #lifestyle{
+            height:1800px;
+        }
+        #about{
+            width:100%;
+        }
+        #services{
+            width:50%;
+        }
+        #links{
+            width:50%;
+        }
+        #contact{
+            width:100%;
+            margin-top: 40px;
+        }
+    }
+    @media(max-width:513px){
+        #banner_text{
+            margin-left: 40px;
+        }
+        #events{
+            height:3800px;
+            padding: 15px;
+        }
+        #events .left{
+            float: none;
+            clear:none;
+            width: 100%;
+        }
+        #events .right{
+            float: none;
+            clear:none;
+            width: 100%;
+        }
+        #events .spring{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            float: none;
+            width:50%;
+        }
+        #events .summer{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            float: none;
+            width: 70%;
+        }
+        #events .autumn1{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            float: none;
+            width: 50%;
+            margin-bottom: 7px;
+        }
+        #events .autumn2{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            float: none;
+            width: 50%;
+            
+        }
+        #events .winter1{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            float:none;
+            width: 60%;
+            margin-bottom: 7px;
+        }
+        #events .winter2{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            float: none;
+            width: 60%;
+            
+        }
+        .box{
+            float:none;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width:70%;
+            margin-bottom: 20px;
+        }
+        #lifestyle{
+            height:1800px;
+        }
+        #about{
+            width:100%;
+        }
+        #services{
+            width:50%;
+        }
+        #links{
+            width:50%;
+        }
+        #contact{
+            width:100%;
+            margin-top: 40px;
+        }
+    }
+    @media(min-width:600px) and (max-width:900px){
+        #places_to_visit{
+            height:1500px;
+        }
+    }
+    @media(max-width: 599px){
+        #places_to_visit{
+            height: 3030px;
+        }
+    }
