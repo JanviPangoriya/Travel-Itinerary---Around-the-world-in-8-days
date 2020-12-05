@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('light.JPG');
+  overflow: hidden;
+ 
+}
+*{
+  margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #000033;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #66ccff;
+  text-align: center;
+  padding: 16px 25px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.topnav a:hover {
+  
+  color: yellow;
+}
+
+.topnav a.active {
+  background-color: #000033;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    background-color: black;
+   
+   
+  }
+  .topnav.responsive a:hover{
+    background-color: grey;
+    color: black;
+  }
+}
+.ml15 {
+  font-weight: 800;
+  font-size: 5rem;
+  font-family: 'Kaushan Script',Arial;
+  color: black;
+  display: flex;
+  text-align: center;justify-content: center;
+}
+
+.ml15 .word {
+  display: inline-block;
+  line-height: 1em;
+}
+.call-outs {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.call-out {
+  position: relative;
+  margin: .5em;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+  border:solid 5px blue;
+  padding: 7px;
+}
+
+/* display .call-out as 1:1 ratio */
+.call-out:before {
+  display: block;
+  content: '';
+  margin-top: 100%;
+}
+
+.link {
+  background-color: rgba(0,0,0,.8);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.link a {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  right: 0;
+  color: #FFF;
+  padding: .5em 0;
+}
+
+.link a:visited,
+.link a:active,
+.link a:hover {
+  color: #FFF;
+}
+
+@media screen and (min-width: 700px) {
+  .call-out {
+    width: 47%;
+    margin: .5em 1em;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .call-outs {
+    justify-content: space-between;
+  }
+  .call-out {
+    width: 23.5%;
+    margin: 0;
+  }
+}
+
+</style>
+</head>
+<body style="background-color: black;">
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">TRAVEL ITINERARY</a>
+  <a href="#news">Home</a>
+  <a href="#contact">Log In</a>
+  <a href="#about">Dive In</a>
+  <a href="#about">About Us</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+  <div>
+    <h1 class="ml15">
+        <span class="word" style="margin-right: 20px;">Discover</span>
+        <span class="word">Europe</span>
+    </h1>
+ </div>
+
+ <div class="call-outs">
+  <div class="call-out one">
+    <div class="link" style="background-image: url('C:\Users\HP\Desktop\amsterdam.JPG');filter: blur(5px);">
+      <a href="C:\Users\HP\Desktop\amsterdam.JPG">Day 1:Amsterdam</a>
+    </div><!-- .call-out .link -->
+  </div><!-- .call-out -->
+
+  <div class="call-out two">
+    <div class="link" style="background-image: url('C:\Users\HP\Desktop\parris.JPG');filter: blur(5px);>
+      <a href="">Day 2:Paris</a>
+    </div><!-- .call-out .link -->
+  </div><!-- .call-out -->
+
+  <div class="call-out three">
+    <div class="link" style="background-image: url('C:\Users\HP\Desktop\berlin.JPG');filter: blur(5px);>
+      <a href="">Day 3:Berlin</a>
+    </div><!-- .call-out .link -->
+  </div><!-- .call-out -->
+
+  <div class="call-out four">
+    <div class="link" style="background-image: url('C:\Users\HP\Desktop\budapest.JPG');filter: blur(5px);>
+      <a href="">Day 4:Budapest</a>
+    </div><!-- .call-out .link -->
+  </div><!-- .call-out -->
+</div><!-- .call-outs -->
+<div class="call-outs" style="margin-top: 0px">
+  <div class="call-out one">
+    <div class="link" style="background-image: url('C:\Users\HP\Desktop\vienna.JPG');filter: blur(5px);>
+      <a href="">Day 5:Vienna</a>
+    </div><!-- .call-out .link -->
+  </div><!-- .call-out -->
+
+  <div class="call-out two">
+    <div class="link" style="background-image: url('C:\Users\HP\Desktop\venice.JPG');filter: blur(5px);>
+      <a href="">Day 6:Venice</a>
+    </div><!-- .call-out .link -->
+  </div><!-- .call-out -->
+
+  <div class="call-out three">
+    <div class="link" style="background-image: url('C:\Users\HP\Desktop\milan.JPG');filter: blur(5px);>
+      <a href="">Day 7:Milan</a>
+    </div><!-- .call-out .link -->
+  </div><!-- .call-out -->
+
+  <div class="call-out four">
+    <div class="link" style="background-image: url('C:\Users\HP\Desktop\rome.JPG');filter: blur(5px);>
+      <a href="">Day 8:Rome</a>
+    </div><!-- .call-out .link -->
+  </div><!-- .call-out -->
+</div><!-- .call-outs -->
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+anime.timeline({loop:true})
+  .add({
+    targets: '.ml15 .word',
+    scale: [14,1],
+    opacity: [0,1],
+    easing: "easeOutCirc",
+    duration: 800,
+    delay: (el, i) => 800 * i
+  }).add({
+    targets: '.ml15',
+    opacity: 1,
+    duration: 80000,
+    easing: "easeOutExpo",
+    delay: 100
+  });
+</script>
+
+</body>
+</html>
